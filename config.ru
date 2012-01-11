@@ -1,10 +1,10 @@
 use Rack::Static, 
-  :urls => ["/stylesheets", "/images", "/javascripts"],
+  :urls => ["/style.css", "/checklist.css", "/stylesheets", "/images", "/javascripts"],
   :root => "public"
 
 #SOLUTION:
 use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  [username, password] == ['admin', 'admin']
+  [username, password] == ['fftf', 'fftf']
 end
 
 run lambda { |env|
