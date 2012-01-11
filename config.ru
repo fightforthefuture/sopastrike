@@ -4,6 +4,12 @@ use Rack::Static , :urls => {
 
     } , :root => "public"
 
+
+
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == ['admin', 'admin']
+end
+
 run Rack::URLMap.new({
   "/"      => Rack::Directory.new("public"),
 })
