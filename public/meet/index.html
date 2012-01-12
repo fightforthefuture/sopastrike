@@ -78,8 +78,7 @@ favorite site to go on strike." />
       {
           var vars = [], hash;
           var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-          for(var i = 0; i < hashes.length; i++)
-          {
+          for(var i = 0; i < hashes.length; i++) {
               hash = hashes[i].split('=');
               vars.push(hash[0]);
               vars[hash[0]] = hash[1];
@@ -144,6 +143,9 @@ favorite site to go on strike." />
 
 form#callin {margin: 0 auto; width: 800px; overflow: hidden; height: 120px; display: block;}
 form#callin input {display: inline; width: 150px; text-align: center;}
+#custom-240 {
+	width: 300px;
+}
 
 </style>
 </head>
@@ -189,8 +191,8 @@ form#callin input {display: inline; width: 150px; text-align: center;}
 	                        <input type="text" name="fullname" title="Name"  class="default-text" required>
 				<input type="email" name="email"
 				title="Email"  class="default-text" required>
-	                        <input type="text" size="100" id="custom-240" name="custom-240"
-				title="Website I use every day"  class="default-text" required>
+	                        <input type="text" size="300" id="custom-240" name="custom-240"
+				title="Website I use every day"  class="default-text" style="width: 300px;" required>
         <br/>
 	
 				<button type="submit" class="submit
