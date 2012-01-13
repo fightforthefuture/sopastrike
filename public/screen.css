@@ -92,7 +92,7 @@ header > h1 > span {
 	display: none;
 }
 
-header > hr, #newspaper hr, #strike-data hr, footer hr {
+header > hr, #call-to-action hr, #strike-data hr, footer hr {
 	border: 0;
 	background: url(/images/broken-line.png) top left no-repeat;
 	width: 792px;
@@ -115,10 +115,14 @@ header > p > strong {
 	color: #8f2929;
 }
 
-#call-to-action p, #newspaper p {
+#call-to-action {
+	height: 385px;
+}
+
+#call-to-action p, #strike-data p {
 	font-family: Georgia, serif;
 	font-size: 18px;
-	width: 80%;
+	width: 90%;
 	text-align: center;
 	margin: 0 auto 30px auto;
 	line-height: 30px;
@@ -143,6 +147,10 @@ header > p > strong {
 	margin-bottom: 20px;
 }
 
+#my-blackout {
+	margin-bottom: 30px;
+}
+
 #request-blackout > input#name, #my-blackout > input#nametwo {
 	margin-left: 30px;
 }
@@ -153,52 +161,31 @@ header > p > strong {
 	font-size: 18px;
 }
 
-#newspaper {
-	margin-bottom: 80px;
-}
-
-#newspaper > p.babas {
+#call-to-action > p.babas {
 	font-family: BebasNeueRegular, sans-serif;
-	font-size: 30px;
-	width: 90%;
-	margin: 0 auto 20px auto;
+	font-size: 32px;
+	width: 95%;
+	margin: 30px auto 20px auto;
 	line-height: 42px;
 	color: #222;
 	text-align: center;
 }
 
-#newspaper > p.babas > a {
+#call-to-action > p.babas > a {
 	text-decoration: none;
 }
 
-#newspaper > p.babas > a:hover {
+#call-to-action > p.babas > a:hover {
 	color: #333;
 }
 
-#newspaper > p.babas > a > span {
+#call-to-action > p.babas > a > span {
 	text-decoration: underline;
 	color: #000;
 }
 
-#newspaper > p.babas > a:hover > span {
+#call-to-action > p.babas > a:hover > span {
 	color: red;
-}
-
-#newspaper > img {
-	margin: -60px 0 0 130px;
-}
-
-#newspaper > .newspaper-glass {
-	display: block;
-	width: 70px;
-	height: 70px;
-	background: transparent url(/images/zoom-in-glass.png) top left no-repeat;
-	position: relative;
-	margin: 0 0 0 120px;
-}
-
-#newspaper > .newspaper-glass > span {
-	display: none;
 }
 
 #strike-data {
