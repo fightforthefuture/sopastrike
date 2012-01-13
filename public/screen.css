@@ -9,6 +9,13 @@
     font-style: normal;
 }
 
+::-webkit-input-placeholder {
+    color:    #777;
+}
+:-moz-placeholder {
+    color:    #777;
+}
+
 body {
 	background: #f7f7f7 url(/images/broadside-bg.jpg) top center no-repeat;
 }
@@ -75,7 +82,7 @@ header > h1 {
 	text-align: center;
 	line-height: 125px;
 	height: 90px;
-	width: 486px;
+	width: 753px;
 	background: transparent url(/images/time-to-strike-header.png) top center no-repeat;
 	color: #000;
 	margin: 42px auto 20px auto;
