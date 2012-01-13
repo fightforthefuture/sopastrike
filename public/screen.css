@@ -148,10 +148,14 @@ header > p > strong {
 }
 
 #my-blackout {
-	margin-bottom: 30px;
+	margin-bottom: 0;
 }
 
-#request-blackout > input#name, #my-blackout > input#nametwo {
+#request-blackout > input#name {
+	margin-left: 110px;
+}
+
+#my-blackout > input#nametwo {
 	margin-left: 30px;
 }
 
@@ -186,6 +190,14 @@ header > p > strong {
 
 #call-to-action > p.babas > a:hover > span {
 	color: red;
+}
+
+#call-to-action p.disclosure {
+	color: #999;
+	font-size: 12px;
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 #strike-data {
