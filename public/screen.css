@@ -20,6 +20,10 @@ body {
 	background: #f7f7f7 url(/images/broadside-bg.jpg) top center no-repeat;
 }
 
+body#thanks {
+	background: #f7f7f7 url(/images/broadside-thanks-bg.jpg) top center no-repeat;
+}
+
 a {
 	color: #222;
 	text-decoration: underline;
@@ -97,7 +101,7 @@ header > hr, #call-to-action hr, #strike-data hr, footer hr {
 	background: url(/images/broken-line.png) top left no-repeat;
 	width: 792px;
 	height: 2px;
-	margin: 0 auto 20px auto;
+	margin: 0 auto 15px auto;
 }
 
 header > p {
@@ -105,7 +109,7 @@ header > p {
 	font-size: 30px;
 	width: 80%;
 	text-align: center;
-	margin: 0 auto 30px auto;
+	margin: 0 auto 25px auto;
 	line-height: 40px;
 	color: #000;
 }
@@ -115,8 +119,12 @@ header > p > strong {
 	color: #8f2929;
 }
 
+#thanks header > p {
+	width: 90%;
+}
+
 #call-to-action {
-	height: 385px;
+	height: 395px;
 }
 
 #call-to-action p, #strike-data p {
@@ -148,11 +156,11 @@ header > p > strong {
 }
 
 #my-blackout {
-	margin-bottom: 0;
+	margin-bottom: 15px;
 }
 
-#request-blackout > input#name {
-	margin-left: 110px;
+#request-blackout > input#firstname {
+	margin-left: 30px;
 }
 
 #my-blackout > input#nametwo {
@@ -244,4 +252,41 @@ footer hr {
 	width: 939px;
 	height: 2px;
 	margin: 0 auto 20px auto;
+}
+
+
+/* Thanks */
+
+#thanks header > h1 {
+	font-family: BebasNeueRegular, sans-serif;
+	font-size: 125px;
+	text-align: center;
+	line-height: 125px;
+	height: 90px;
+	width: 416px;
+	background: transparent url(/images/thank-you-header.png) top center no-repeat;
+	color: #000;
+	margin: 42px auto 20px auto;
+}
+
+#thanks header > h1 > span {
+	display: none;
+}
+
+#share-this > ul {
+	width: 590px;
+	margin: 0 auto 0 auto;
+}
+
+#share-this > ul > li {
+	list-style-type: none;
+	float: left;
+}
+
+#share-this > ul > li.twitter {
+	width: 120px;
+}
+
+#share-this > ul > li.facebook {
+	width: 470px;
 }
