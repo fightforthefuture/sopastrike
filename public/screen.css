@@ -10,7 +10,7 @@
 }
 
 body {
-	background: #f7f7f7 url(/new_images/broadside-bg.jpg) top center no-repeat;
+	background: #f7f7f7 url(/images/broadside-bg.jpg) top center no-repeat;
 }
 
 a {
@@ -25,7 +25,7 @@ p, h1, h2, td {
 #share-banner {
 	width: 100px;
 	height: 248px;
-	background: transparent url(/new_images/share-banner.png) top left no-repeat;
+	background: transparent url(/images/share-banner.png) top left no-repeat;
 	position: absolute;
 	margin-left: 890px;
 }
@@ -46,7 +46,7 @@ p, h1, h2, td {
 	display: block;
 	width: 35px;
 	height: 35px;
-	background: url(/new_images/share-sprite.png) top left no-repeat;
+	background: url(/images/share-sprite.png) top left no-repeat;
 }
 
 #share-banner > ul > li > a > span {
@@ -76,7 +76,7 @@ header > h1 {
 	line-height: 125px;
 	height: 90px;
 	width: 486px;
-	background: transparent url(/new_images/time-to-strike-header.png) top center no-repeat;
+	background: transparent url(/images/time-to-strike-header.png) top center no-repeat;
 	color: #000;
 	margin: 42px auto 20px auto;
 }
@@ -87,7 +87,7 @@ header > h1 > span {
 
 header > hr, #newspaper hr, #strike-data hr, footer hr {
 	border: 0;
-	background: url(/new_images/broken-line.png) top left no-repeat;
+	background: url(/images/broken-line.png) top left no-repeat;
 	width: 792px;
 	height: 2px;
 	margin: 0 auto 20px auto;
@@ -157,7 +157,7 @@ header > p > strong {
 	display: block;
 	width: 70px;
 	height: 70px;
-	background: transparent url(/new_images/zoom-in-glass.png) top left no-repeat;
+	background: transparent url(/images/zoom-in-glass.png) top left no-repeat;
 	position: relative;
 	margin: 0 0 0 120px;
 }
@@ -210,7 +210,7 @@ footer {
 
 footer hr {
 	border: 0;
-	background: url(/new_images/broken-line-wide.png) top left no-repeat;
+	background: url(/images/broken-line-wide.png) top left no-repeat;
 	width: 939px;
 	height: 2px;
 	margin: 0 auto 20px auto;
