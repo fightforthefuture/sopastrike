@@ -115,7 +115,7 @@ header > p > strong {
 	color: #8f2929;
 }
 
-#call-to-action p, #strike-data p {
+#call-to-action p, #newspaper p {
 	font-family: Georgia, serif;
 	font-size: 18px;
 	width: 80%;
@@ -154,17 +154,34 @@ header > p > strong {
 }
 
 #newspaper {
-	margin-bottom: 65px;
+	margin-bottom: 80px;
 }
 
 #newspaper > p.babas {
 	font-family: BebasNeueRegular, sans-serif;
 	font-size: 30px;
 	width: 90%;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 20px auto;
 	line-height: 42px;
-	color: #000;
+	color: #222;
 	text-align: center;
+}
+
+#newspaper > p.babas > a {
+	text-decoration: none;
+}
+
+#newspaper > p.babas > a:hover {
+	color: #333;
+}
+
+#newspaper > p.babas > a > span {
+	text-decoration: underline;
+	color: #000;
+}
+
+#newspaper > p.babas > a:hover > span {
+	color: red;
 }
 
 #newspaper > img {
