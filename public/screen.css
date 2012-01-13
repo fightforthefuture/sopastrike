@@ -102,10 +102,10 @@ header > hr, #newspaper hr, #strike-data hr, footer hr {
 
 header > p {
 	font-family: BebasNeueRegular, sans-serif;
-	font-size: 40px;
-	width: 70%;
+	font-size: 30px;
+	width: 80%;
 	text-align: center;
-	margin: 0 auto 50px auto;
+	margin: 0 auto 30px auto;
 	line-height: 40px;
 	color: #000;
 }
@@ -125,19 +125,29 @@ header > p > strong {
 	color: #000;
 }
 
-#request-blackout {
-	margin:0 0 45px 60px;
+#call-to-action p {
+	margin-bottom: 5px;
+	text-align: left;
+	width: 875px;
+}
+
+#request-blackout, #my-blackout {
+	margin:0 0 45px 28px;
 	background: #333;
 	padding: 15px 0 15px 0;
-	width: 850px;
+	width: 880px;
 	box-shadow: 0 2px 5px #666;
 }
 
-#request-blackout > input#name {
-	margin-left: 65px;
+#request-blackout {
+	margin-bottom: 20px;
 }
 
-#request-blackout > input {
+#request-blackout > input#name, #my-blackout > input#nametwo {
+	margin-left: 30px;
+}
+
+#request-blackout > input, #my-blackout > input {
 	height: 38px;
 	padding: 0 0 0 5px;
 	font-size: 18px;
@@ -150,10 +160,11 @@ header > p > strong {
 #newspaper > p.babas {
 	font-family: BebasNeueRegular, sans-serif;
 	font-size: 30px;
-	width: 82%;
+	width: 90%;
 	margin: 0 auto 0 auto;
 	line-height: 42px;
 	color: #000;
+	text-align: center;
 }
 
 #newspaper > img {
@@ -194,16 +205,12 @@ header > p > strong {
 #strike-data ul > li {
 	font-size: 18px;
 	margin-bottom: 15px;
+	float: left;
+	width: 50%;
 }
 
 #strike-data hr {
 	width: 100%;
-}
-
-#strike-data .span9 > h2 {
-	font-size: 20px;
-	line-height: 27px;
-	margin-bottom: 1px;
 }
 
 #strike-data table > thead {
