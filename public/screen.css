@@ -13,12 +13,60 @@ body {
 	background: #f7f7f7 url(/new_images/broadside-bg.jpg) top center no-repeat;
 }
 
-section#share {
+a {
+	color: #222;
+	text-decoration: underline;
+}
+
+p, h1, h2, td {
+	color: #000;
+}
+
+#share-banner {
 	width: 100px;
 	height: 248px;
 	background: transparent url(/new_images/share-banner.png) top left no-repeat;
 	position: absolute;
 	margin-left: 890px;
+}
+
+#share-banner > ul {
+	margin: 40px 0 0 20px;
+	padding: 0;
+}
+
+#share-banner > ul > li {
+	width: 50px;
+	list-style-type: none;
+	margin: 0 0 7px 0;
+	padding: 0;
+}
+
+#share-banner > ul > li > a {
+	display: block;
+	width: 35px;
+	height: 35px;
+	background: url(/new_images/share-sprite.png) top left no-repeat;
+}
+
+#share-banner > ul > li > a > span {
+	display: none;
+}
+
+#share-banner > ul > li.facebook > a {
+
+}
+
+#share-banner > ul > li.twitter > a {
+	background-position: 0 -36px;
+}
+
+#share-banner > ul > li.tumblr > a {
+	background-position: 0 -72px;
+}
+
+#share-banner > ul > li.google > a {
+	background-position: 0 -108px;
 }
 
 header > h1 {
@@ -37,7 +85,7 @@ header > h1 > span {
 	display: none;
 }
 
-header > hr {
+header > hr, #newspaper hr, #strike-data hr, footer hr {
 	border: 0;
 	background: url(/new_images/broken-line.png) top left no-repeat;
 	width: 792px;
@@ -60,7 +108,7 @@ header > p > strong {
 	color: #8f2929;
 }
 
-section#call-to-action p {
+#call-to-action p, #strike-data p {
 	font-family: Georgia, serif;
 	font-size: 18px;
 	width: 80%;
@@ -71,11 +119,99 @@ section#call-to-action p {
 }
 
 #request-blackout {
-	margin-left: 70px;
+	margin:0 0 45px 60px;
+	background: #333;
+	padding: 15px 0 15px 0;
+	width: 850px;
+	box-shadow: 0 2px 5px #666;
+}
+
+#request-blackout > input#name {
+	margin-left: 65px;
 }
 
 #request-blackout > input {
 	height: 38px;
 	padding: 0 0 0 5px;
 	font-size: 18px;
+}
+
+#newspaper {
+	margin-bottom: 65px;
+}
+
+#newspaper > p.babas {
+	font-family: BebasNeueRegular, sans-serif;
+	font-size: 30px;
+	width: 82%;
+	margin: 0 auto 0 auto;
+	line-height: 42px;
+	color: #000;
+}
+
+#newspaper > img {
+	margin: -60px 0 0 130px;
+}
+
+#newspaper > .newspaper-glass {
+	display: block;
+	width: 70px;
+	height: 70px;
+	background: transparent url(/new_images/zoom-in-glass.png) top left no-repeat;
+	position: relative;
+	margin: 0 0 0 120px;
+}
+
+#newspaper > .newspaper-glass > span {
+	display: none;
+}
+
+#strike-data {
+
+}
+
+#strike-data p {
+	width: 79%;
+}
+
+#strike-data h2, #strike-data ul > li {
+	font-size: 24px;
+	font-weight: normal;
+	font-family: BebasNeueRegular, sans-serif;
+}
+
+#strike-data ul {
+	margin-top: 15px;
+}
+
+#strike-data ul > li {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+#strike-data hr {
+	width: 100%;
+}
+
+#strike-data .span9 > h2 {
+	font-size: 20px;
+	line-height: 27px;
+	margin-bottom: 1px;
+}
+
+#strike-data table > thead {
+	font-family: BebasNeueRegular, sans-serif;
+	font-size: 18px;
+}
+
+footer {
+	font-family: Georgia, serif;
+}
+
+footer hr {
+	border: 0;
+	background: url(/new_images/broken-line-wide.png) top left no-repeat;
+	width: 939px;
+	height: 2px;
+	margin: 0 auto 20px auto;
 }
