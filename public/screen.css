@@ -228,9 +228,12 @@ header > p > strong {
 
 #strike-data ul > li {
 	font-size: 18px;
-	margin-bottom: 15px;
+	margin:0 15px 15px 0;
 	float: left;
-	width: 50%;
+	width: 140px;
+	text-overflow: ellipsis;
+	padding: 0;
+	list-style-type: none;
 }
 
 #strike-data hr {
