@@ -1,5 +1,5 @@
 use Rack::Static, 
-  :urls => ["/meet/index.html", "/screen.css", "/checklist.css", "/stylesheets", "/images", "/javascripts"],
+  :urls => ["/meet/index.html", "/screen.css", "/checklist.css", "/stylesheets", "/images", "/javascripts", "/fonts"],
   :root => "public"
 
 #SOLUTION:
