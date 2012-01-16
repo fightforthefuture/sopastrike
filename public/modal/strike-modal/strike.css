@@ -11,11 +11,11 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 
 body, html {
 	font-family: Helvetica, Arial, sans-serif;
-	background: #111 url(/modal/strike-modal/strike-modal-bg.jpg) top left repeat;
+	background: #1B1B1B url(/modal/strike-modal/strike-modal-bg.jpg) top left repeat;
 	color: #fff;
 }
 
-h1 {
+#strike-wrapper h1 {
 	font-size: 30px;
 	text-shadow: #000000 2px 2px;
 	text-align: center;
@@ -23,6 +23,18 @@ h1 {
 	margin: 0 auto 15px auto;
 	text-transform: Uppercase;
 	line-height: 40px;
+}
+
+#strike-wrapper p {
+	font-size: 13px;
+	text-align: center;
+	margin-top: 40px;
+	line-height: 16px;
+	color: #aaa;
+}
+
+#strike-wrapper a {
+	color: blue;
 }
 
 #strike-wrapper {
@@ -53,7 +65,7 @@ h1 {
 	border-color: pink;	
 }
 
-#strike-wrapper input#name {
+#strike-wrapper input#firstname {
 	margin-left: 215px;
 }
 
