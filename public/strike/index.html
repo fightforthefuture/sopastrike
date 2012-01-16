@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Strike Against SOPA & PIPA</title>
+		<link rel="stylesheet" type="text/css" href="/strike/strike.css">
+		<script src="/strike/jquery.js"></script>
+		<script src="/strike/jquery.placeholder.js"></script>
+		<script type="text/javascript">
+		
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-26978317-4']);
+		_gaq.push(['_trackPageview']);
+		
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		
+		$(document).ready(function() {
+		    $('input[placeholder],textarea[placeholder]').placeholder();
+		    if(document.referrer != "")
+		    {
+		    	$('#original-site').text(document.referrer);
+		    }
+		});
+		</script>
+	</head>
+	<body>
+		<div id="strike-wrapper">
+			<div>
+				<img src="/strike/strike-paper.jpg" width="570" height="350" id="paper">
+				<h1>Today, we are striking against censorship. <strong>Join us in this historic moment:</strong> tell congress to stop this bill now!</h1>
+			</div>
+			<form action="http://act.fightforthefuture.org/page/s/sopa-strike-modal" method="post">
+				<div id="info">
+					<input size="16" id="firstname" name="firstname" type="text"  placeholder="Name" />
+					<input type="email" class="text" size="48" id="email" name="email" placeholder="Email" />
+					
+					<input size="48" id="addr1" name="addr1" type="text"  placeholder="Address" />
+					<input size="5" id="zip" name="zip" type="text"  placeholder="Zipcode" />
+					<button type="submit"><span>Send A Message To Congress</span></button>
+				</div>
+				<div id="letter">
+					<textarea id="custom-285" name="custom-285">I am writing to you as a voter in your district. I urge you to oppose the House version of S. 968, the PROTECT IP Act. The PROTECT IP Act is dangerous, ineffective, and short-sighted. The House version -- just introduced by Rep. Goodlatte -- is far worse.
+
+Over coming days you'll be hearing from the many businesses, advocacy organizations, and ordinary Americans who oppose this legislation because of the myriad ways in which it will stifle free speech and innovation.  We hope you'll take our concerns to heart and oppose this legislation.
+</textarea>
+				</div>
+				
+			</form>
+			<p>Fight For The Future may contact you about future campaigns. <br>We will never share your email with anyone. <a href="http://fightforthefuture.org/privacy">Privacy Policy</a></p>
+		</div>
+		<script type="text/javascript">
+		var _sf_async_config={uid:30346,domain:"sopastrike.com"};
+		(function(){
+		  function loadChartbeat() {
+		    window._sf_endpt=(new Date()).getTime();
+		    var e = document.createElement('script');
+		    e.setAttribute('language', 'javascript');
+		    e.setAttribute('type', 'text/javascript');
+		    e.setAttribute('src',
+		       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+		       "js/chartbeat.js");
+		    document.body.appendChild(e);
+		  }
+		  var oldonload = window.onload;
+		  window.onload = (typeof window.onload != 'function') ?
+		     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+		})();
+
+		</script>
+	</body>
+</html>

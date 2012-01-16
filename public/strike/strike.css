@@ -1,0 +1,150 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.3.0
+build: 3167
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+/* Our Code */
+
+body, html {
+	font-family: Helvetica, Arial, sans-serif;
+	background: #1B1B1B url(/strike/strike-modal-bg.jpg) top left repeat;
+	color: #fff;
+}
+
+#strike-wrapper h1 {
+	font-size: 30px;
+	text-shadow: #000000 2px 2px;
+	text-align: center;
+	width: 800px;
+	margin: 0 auto 15px auto;
+	line-height: 40px;
+	padding: 0 0 0 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+#strike-wrapper p {
+	font-size: 13px;
+	text-align: center;
+	margin-top: 40px;
+	line-height: 16px;
+	color: #aaa;
+}
+
+#strike-wrapper a {
+	color: blue;
+}
+
+#strike-wrapper {
+	width: 800px;
+	margin: 0 auto 0 auto;
+}
+
+#strike-wrapper > div {
+
+}
+
+#strike-wrapper img {
+	width: 570px;
+	margin: 15px auto 0 auto;
+	display: block;
+}
+
+#strike-wrapper form {
+	width: 800px;
+	clear: both;
+	margin: 0 auto 0 auto;
+}
+
+#strike-wrapper > form > #info {
+
+}
+
+#strike-wrapper > form > #letter {
+	
+}
+
+#strike-wrapper input {
+	width: 190px;
+	padding: 5px;
+	border: 1px solid #000;
+	font-size: 24px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	height: 40px;
+	box-shadow: #000 2px 2px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#strike-wrapper textarea {
+	padding: 25px 5px 5px 25px;
+	border: none;
+	font-size: 20px;
+	width: 775px;
+	height: 211px;
+	margin: 0 0 0 0;
+	background: transparent url(/strike/quote.png) top left no-repeat;
+	color: #ddd;
+}
+
+#strike-wrapper input#zip {
+	width: 100px;
+}
+
+#strike-wrapper input#addr1 {
+	width: 230px;
+}
+
+#strike-wrapper input#firstname {
+	
+}
+
+#strike-wrapper button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #FB6DA8;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #FB6DA8;
+	box-shadow:inset 0px 1px 0px 0px #fbafe3;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f31661), color-stop(1, #930f3c) );
+	background:-moz-linear-gradient( center top, #f31661 5%, #930f3c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f31661', endColorstr='#930f3c');
+	background-color:#ff5bb0;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #930f3c;
+	color:#ffffff;
+	font-family:arial;
+	font-size:24px;
+	font-weight:bold;
+	padding:7px 5px 7px 5px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #333;
+	display: block;
+	clear: both;
+	margin: 0 0 10px 0;
+	margin: 0 auto 10px auto;
+	width: 360px;
+	cursor: pointer;
+}
+
+#strike-wrapper button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FF1766), color-stop(1, #B31249) );
+	background:-moz-linear-gradient( center top, #FF1766 5%, #B31249 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#930f3c', endColorstr='#B31249');
+	background-color:#ef027d;
+}
+
+#strike-wrapper button:active {
+	position:relative;
+	top:1px;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #930f3c), color-stop(1, #f31661) );
+	background:-moz-linear-gradient( center top, #930f3c 5%, #ff5bb0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#930f3c', endColorstr='#f31661');
+}
