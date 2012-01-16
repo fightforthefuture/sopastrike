@@ -96,7 +96,7 @@ header > h1 > span {
 	display: none;
 }
 
-header > hr, #call-to-action hr, #strike-data hr, footer hr {
+section.item hr, #help-out hr, header > hr, #call-to-action hr, #strike-data hr, footer hr {
 	border: 0;
 	background: url(/images/broken-line.png) top left no-repeat;
 	width: 792px;
@@ -127,7 +127,7 @@ header > p > strong {
 	height: 395px;
 }
 
-#call-to-action p, #strike-data p {
+#help-out p, #call-to-action p, #strike-data p {
 	font-family: Georgia, serif;
 	font-size: 18px;
 	width: 90%;
@@ -208,15 +208,25 @@ header > p > strong {
 	margin-bottom: 10px;
 }
 
+#help-out {
+
+}
+
+#help-out ol li {
+   color: #000;
+   padding: 8px;
+   line-height: 18px;
+}
+
 #strike-data {
 
 }
 
-#strike-data p {
+#help-out p, #strike-data p {
 	width: 79%;
 }
 
-#strike-data h2, #strike-data ul > li {
+section.item h2, #help-out h2, #strike-data h2, #strike-data ul > li {
 	font-size: 24px;
 	font-weight: normal;
 	font-family: BebasNeueRegular, sans-serif;
@@ -236,7 +246,7 @@ header > p > strong {
 	list-style-type: none;
 }
 
-#strike-data hr {
+section.item h2, #strike-data hr, #help-out hr {
 	width: 100%;
 }
 
