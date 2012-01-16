@@ -21,8 +21,12 @@ body, html {
 	text-align: center;
 	width: 800px;
 	margin: 0 auto 15px auto;
-	text-transform: Uppercase;
 	line-height: 40px;
+	padding: 0 0 0 0;
+}
+
+strong {
+	font-weight: bold;
 }
 
 #strike-wrapper p {
@@ -42,14 +46,32 @@ body, html {
 	margin: 0 auto 0 auto;
 }
 
-#strike-wrapper > img {
-	width: 561px;
-	height: 340px;
-	margin: 0 0 0 170px;
+#strike-wrapper > div {
+
+}
+
+#strike-wrapper img {
+	width: 570px;
+	margin: 0 auto 0 auto;
+	display: block;
+}
+
+#strike-wrapper form {
+	width: 525px;
+	clear: both;
+	margin: 0 auto 0 auto;
+}
+
+#strike-wrapper > form > #info {
+
+}
+
+#strike-wrapper > form > #letter {
+
 }
 
 #strike-wrapper input {
-	width: 220px;
+	width: 245px;
 	padding: 5px;
 	border: 1px solid #000;
 	font-size: 24px;
@@ -57,16 +79,35 @@ body, html {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	height: 40px;
-	background: #fff url(/modal/strike-modal/input-bg.png);
 	box-shadow: #000 2px 2px;
+	float: left;
+	margin: 0 0 10px 0;
 }
 
-#strike-wrapper input.focusField {
-	border-color: pink;	
+#strike-wrapper textarea {
+	padding: 5px;
+	border: 1px solid #000;
+	font-size: 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: #000 2px 2px;
+	width: 515px;
+	height: 211px;
+	margin: 0 0 0 0;
+}
+
+#strike-wrapper input#zip {
+	width: 100px;
+}
+
+#strike-wrapper input#addr1 {
+	width: 390px;
+	margin-right: 10px;
 }
 
 #strike-wrapper input#firstname {
-	margin-left: 215px;
+	margin-right: 10px;
 }
 
 #strike-wrapper button {
@@ -77,21 +118,21 @@ body, html {
 	background:-moz-linear-gradient( center top, #f31661 5%, #930f3c 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f31661', endColorstr='#930f3c');
 	background-color:#ff5bb0;
-	-moz-border-radius:6px;
-	-webkit-border-radius:6px;
-	border-radius:6px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
 	border:1px solid #930f3c;
 	color:#ffffff;
 	font-family:arial;
 	font-size:24px;
 	font-weight:bold;
-	padding:6px 24px;
+	padding:5px 25px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #333;
 	clear: both;
 	display: block;
-	margin: 20px auto 0 auto;
-	width: 530px;
+	margin: 0 auto 0 auto;
+	width: 525px;
 }
 
 #strike-wrapper button:hover {
