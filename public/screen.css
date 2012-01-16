@@ -226,7 +226,7 @@ header > p > strong {
 	width: 79%;
 }
 
-section.item h2, #help-out h2, #strike-data h2, #strike-data ul > li {
+section.item h2, #help-out h2, #strike-data h2 {
 	font-size: 24px;
 	font-weight: normal;
 	font-family: BebasNeueRegular, sans-serif;
@@ -244,6 +244,11 @@ section.item h2, #help-out h2, #strike-data h2, #strike-data ul > li {
 	text-overflow: ellipsis;
 	padding: 0;
 	list-style-type: none;
+}
+
+#strike-data ul > li a {
+   font-size: 12px;
+   text-decoration: underline;
 }
 
 section.item h2, #strike-data hr, #help-out hr {
@@ -266,7 +271,6 @@ footer hr {
 	height: 2px;
 	margin: 0 auto 20px auto;
 }
-
 
 /* Thanks */
 
@@ -303,3 +307,5 @@ footer hr {
 #share-this > ul > li.facebook {
 	width: 470px;
 }
+
+ul li a {text-decoration: none; font-size: 20px;}
