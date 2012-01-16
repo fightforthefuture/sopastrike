@@ -42,7 +42,7 @@ strong {
 }
 
 #strike-wrapper {
-	width: 900px;
+	width: 800px;
 	margin: 0 auto 0 auto;
 }
 
@@ -57,7 +57,7 @@ strong {
 }
 
 #strike-wrapper form {
-	width: 525px;
+	width: 800px;
 	clear: both;
 	margin: 0 auto 0 auto;
 }
@@ -67,11 +67,11 @@ strong {
 }
 
 #strike-wrapper > form > #letter {
-
+	
 }
 
 #strike-wrapper input {
-	width: 245px;
+	width: 190px;
 	padding: 5px;
 	border: 1px solid #000;
 	font-size: 24px;
@@ -81,20 +81,18 @@ strong {
 	height: 40px;
 	box-shadow: #000 2px 2px;
 	float: left;
-	margin: 0 0 10px 0;
+	margin: 0 10px 10px 0;
 }
 
 #strike-wrapper textarea {
-	padding: 5px;
-	border: 1px solid #000;
+	padding: 25px 5px 5px 25px;
+	border: none;
 	font-size: 20px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	box-shadow: #000 2px 2px;
-	width: 515px;
+	width: 775px;
 	height: 211px;
 	margin: 0 0 0 0;
+	background: transparent url(/modal/strike-modal/quote.png) top left no-repeat;
+	color: #ddd;
 }
 
 #strike-wrapper input#zip {
@@ -102,12 +100,11 @@ strong {
 }
 
 #strike-wrapper input#addr1 {
-	width: 390px;
-	margin-right: 10px;
+	width: 230px;
 }
 
 #strike-wrapper input#firstname {
-	margin-right: 10px;
+	
 }
 
 #strike-wrapper button {
@@ -126,23 +123,28 @@ strong {
 	font-family:arial;
 	font-size:24px;
 	font-weight:bold;
-	padding:5px 25px;
+	padding:7px 5px 7px 5px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #333;
-	clear: both;
 	display: block;
-	margin: 0 auto 0 auto;
-	width: 525px;
+	clear: both;
+	margin: 0 0 10px 0;
+	margin: 0 auto 10px auto;
+	width: 360px;
+	cursor: pointer;
 }
 
 #strike-wrapper button:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #930f3c), color-stop(1, #f31661) );
-	background:-moz-linear-gradient( center top, #930f3c 5%, #ff5bb0 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#930f3c', endColorstr='#f31661');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FF1766), color-stop(1, #B31249) );
+	background:-moz-linear-gradient( center top, #FF1766 5%, #B31249 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#930f3c', endColorstr='#B31249');
 	background-color:#ef027d;
 }
 
 #strike-wrapper button:active {
 	position:relative;
 	top:1px;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #930f3c), color-stop(1, #f31661) );
+	background:-moz-linear-gradient( center top, #930f3c 5%, #ff5bb0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#930f3c', endColorstr='#f31661');
 }
