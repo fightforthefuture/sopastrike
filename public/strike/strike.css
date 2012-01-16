@@ -85,14 +85,14 @@ strong {
 }
 
 #strike-wrapper textarea {
-	padding: 25px 5px 5px 25px;
+	padding: 35px 5px 5px 25px;
 	border: none;
-	font-size: 20px;
+	font-size: 17px;
 	width: 775px;
 	height: 211px;
 	margin: 0 0 0 0;
 	background: transparent url(/strike/quote.png) top left no-repeat;
-	color: #ddd;
+	color: #aaa;
 }
 
 #strike-wrapper input#zip {
