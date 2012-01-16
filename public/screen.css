@@ -220,15 +220,11 @@ header > p > strong {
    line-height: 18px;
 }
 
-#strike-data {
-
-}
-
 #help-out p, #strike-data p {
 	width: 79%;
 }
 
-section.item h2, #help-out h2, #strike-data h2 {
+footer h2, section.item h2, #help-out h2, #strike-data h2 {
 	font-size: 24px;
 	font-weight: normal;
 	font-family: BebasNeueRegular, sans-serif;
@@ -238,7 +234,7 @@ section.item h2, #help-out h2, #strike-data h2 {
 	margin-top: 15px;
 }
 
-#strike-data ul > li {
+#full-list ul > li, #strike-data ul > li {
 	font-size: 18px;
 	margin:0 15px 15px 0;
 	float: left;
@@ -248,7 +244,7 @@ section.item h2, #help-out h2, #strike-data h2 {
 	list-style-type: none;
 }
 
-#strike-data ul > li a {
+#full-list ul > li a, #strike-data ul > li a {
    font-size: 12px;
    text-decoration: underline;
 }
@@ -319,3 +315,5 @@ ul li a {text-decoration: none; font-size: 20px;}
 	text-align: left;
 	font-family: verdana, sans-serif;
 }
+
+#full-list ul.supporting-sites > li  {width: 190px; overflow: hidden; color: #000; white-space: nowrap;}
