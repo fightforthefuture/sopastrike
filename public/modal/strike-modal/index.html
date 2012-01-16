@@ -4,6 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Strike Against SOPA & PIPA</title>
 		<link rel="stylesheet" type="text/css" href="/modal/strike-modal/strike.css">
+		<script src="/modal/strike-modal/jquery.js"></script>
+		<script src="/modal/strike-modal/jquery.placeholder.js"></script>
 		<script type="text/javascript">
 		
 		var _gaq = _gaq || [];
@@ -16,15 +18,28 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 		
+		$(document).ready(function() {
+		    $('input[placeholder],textarea[placeholder]').placeholder();
+		});
 		</script>
 	</head>
 	<body>
 		<div id="strike-wrapper">
-			<img src="/modal/strike-modal/strike-paper.jpg" width="561" height="340" id="paper">
-			<h1>Today, we are striking against censorship.<br>Join us in this historic moment:<br>tell congress to stop this bill now!</h1>
+			<div>
+				<img src="/modal/strike-modal/strike-paper.jpg" width="570" height="350" id="paper">
+				<h1>Today, we are striking against censorship. <br><strong>Join us in this historic moment:</strong><br> tell congress to stop this bill now!</h1>
+			</div>
 			<form action="http://act.fightforthefuture.org/page/s/sopa-strike-modal" method="post">
-				<input type="text" name="firstname" placeholder="Your Name" id="firstname">
-				<input type="text" name="email" placeholder="Your Email" id="email">
+				<div id="info">
+					<input size="16" id="firstname" name="firstname" type="text"  placeholder="Name" />
+					<input type="email" class="text" size="48" id="email" name="email" placeholder="Email" />
+					
+					<input size="48" id="addr1" name="addr1" type="text"  placeholder="Address" />
+					<input size="5" id="zip" name="zip" type="text"  placeholder="Zipcode" />
+				</div>
+				<div id="letter">
+					<textarea id="custom-285" name="custom-285"></textarea>
+				</div>
 				<button><span>Send A Message: Don't Censor The Web!</span></button>
 			</form>
 			<p>Fight For The Future may contact you about future campaigns. <br>We will never share your email with anyone. <a href="http://fightforthefuture.org/privacy">Privacy Policy</a></p>
