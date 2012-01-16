@@ -43,25 +43,15 @@
         </header>
 
         <section id="call-to-action">
-          <p>Petition the sites you use:</p>
-          <form id="request-blackout" action="http://act.fightforthefuture.org/page/s/sopa-strike-requests" method="post">
-            <input size="16" id="firstname" name="firstname" type="text" class="span3" placeholder="Name">
-            <input type="email" class="span3" size="48" id="email" name="email" placeholder="Email">
-            <input size="25" id="custom-255" name="custom-255" type="text" class="span5" placeholder="Sites to petition">
 
-            <button class="btn danger large span4">Hey! You Should Strike!</button>
-
-          </form>
           <p>Join the strike yourself:</p>
           <form id="my-blackout" action="http://act.fightforthefuture.org/page/s/sopa-strike-participants" method="post">
             <input id="nametwo" type="text" name="firstname" placeholder="Name" class="span3">
             <input type="email" name="email" placeholder="Email" class="span3">
-            <input size="25" id="custom-270" name="custom-270" type="text" class="span5" placeholder="Your website">
+            <input size="25" id="custom-270" name="custom-270" type="text" class="span5" placeholder="Your website (optional)">
             <button class="btn danger large span4">I'm Going To Strike!</button>
           </form>
           <p class="disclosure">Email optional. <a href="http://fightforthefuture.org">Fight for the Future</a> will contact you about opportunities to meet with your Senator and other campaigns. <a href="http://fightforthefuture.org/privacy">Privacy Policy</a></p>
-          <hr>
-          <p class="babas"><a href="http://americancensorship.org/modal/sopastrikeoverlay.html">GOING ON STRIKE?  JOINING THE BLACKOUT?  AT 8AM WEDNESDAY, PUT THIS ON YOUR SITE.</a></a></p>
         </section>
         <div id="help-out" class="row">
           <p>January 18th is going to be amazing.  Sites are striking in all different ways, but they are united by this:  do the biggest thing you possibly can, and drive contacts to Congress.</p>
@@ -89,7 +79,7 @@
         <section id="strike-data">
           <p>On Jan 24th, Congress will vote to pass internet censorship in the Senate, even though the vast majority of Americans are opposed. We need to kill the bill - PIPA in the Senate and SOPA in the House - to protect our rights to free speech, privacy, and prosperity. We need internet companies to follow Reddit's lead and stand up for the web, as we internet users are doing every day.</p>
           <div class="row">
-            <div class="span6">
+            <div class="span12">
               <h2>Confirmed Participants:</h2>
               <hr>
               <ul>
@@ -118,23 +108,47 @@
                 <li><a href="http://cakewrecks.com/"><span>Cake Wrecks</span></a></li>
                 <li><a href="http://vanillaforums.org/"><span>vanillaforums.org</span></a></li>
                 <li><a href="http://stfuconservatives.net/"><span>stfuconservatives.net</span></a></li>
+				<li><a href="http://little-apps.org/"><span>little-apps.org</span></a></li>
+				<li><a href="http://wordpress.org"><span>Wordpress</span></a></li>
+				<li><a href="http://dotsub.com"><span>dotSUB</span></a></li>
               </ul>             
             </div>
-            <div class="span10">
-              <h2>Sites we urge to go on strike:</h2>
+            <div class="span4 twitterz">
+              <h2>Right now on Twitter</h2>
               <hr>
-              <table>
-                <thead><tr><td>Site</td><td>Requested By</td></tr></thead>
-                <tr><td>4Chan</td><td>Tiffiniy Cheng</td></tr>
-                <tr><td>Google.com</td><td>Joshua Blount</td></tr>
-                <tr><td>Wikipedia</td><td>Phil Nelson</td></tr>
-                <tr><td>The Huffington Post</td><td>Sam Sero</td></tr>
-                <tr><td>pandora.com</td><td>Ashley Holbrook</td></tr>
-                <tr><td>Facebook</td><td>Robert Koch</td></tr>
-                <tr><td>Amazon</td><td>Josh Dressler</td></tr>
-                <tr><td>github.com</td><td>Cynthia Schames</td></tr>
-                <tr><td>Netflix</td><td>Mischa Kavish</td></tr>
-              </table>
+             <!-- Twitter -->
+
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+	          <script>
+	          new TWTR.Widget({
+	            version: 2,
+	            type: 'search',
+	            search: '#sopastrike',
+	            interval: 30000,
+	            title: '#SOPASTRIKE',
+	            subject: 'SOPA STRIKE',
+	            width: 'auto',
+	            height: 200,
+	            theme: {
+	              shell: {
+	                background: '#333333',
+	                color: '#efefef'
+	              },
+	              tweets: {
+	                background: '#f7f7f7',
+	                color: '#111111',
+	                links: '#00059d'
+	              }
+	            },
+	            features: {
+	              scrollbar: false,
+	              loop: true,
+	              live: true,
+	              behavior: 'default'
+	            }
+	          }).render().start();
+	          </script>
+	
             </div>
           </div>
         </section>
@@ -148,36 +162,7 @@
         <section class="item">
           <h2>Right Now on Twitter</h2>
           <hr/>
-          <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-          <script>
-          new TWTR.Widget({
-            version: 2,
-            type: 'search',
-            search: '#sopastrike',
-            interval: 30000,
-            title: '#SOPASTRIKE',
-            subject: 'SOPA STRIKE',
-            width: 600,
-            height: 200,
-            theme: {
-              shell: {
-                background: '#333333',
-                color: '#efefef'
-              },
-              tweets: {
-                background: '#f7f7f7',
-                color: '#111111',
-                links: '#00059d'
-              }
-            },
-            features: {
-              scrollbar: false,
-              loop: true,
-              live: true,
-              behavior: 'default'
-            }
-          }).render().start();
-          </script>
+          
         </section>
 
         <footer>
