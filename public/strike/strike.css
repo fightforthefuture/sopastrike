@@ -38,7 +38,7 @@ strong {
 }
 
 #strike-wrapper a {
-	color: blue;
+	color: #fff;
 }
 
 #strike-wrapper {
@@ -50,13 +50,13 @@ strong {
 
 }
 
-#strike-wrapper img {
+#strike-wrapper > div > img#paper {
 	width: 570px;
 	margin: 15px auto 0 auto;
 	display: block;
 }
 
-#strike-wrapper form {
+#strike-wrapper > div > form {
 	width: 800px;
 	clear: both;
 	margin: 0 auto 0 auto;
@@ -147,4 +147,21 @@ strong {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #930f3c), color-stop(1, #f31661) );
 	background:-moz-linear-gradient( center top, #930f3c 5%, #ff5bb0 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#930f3c', endColorstr='#f31661');
+}
+
+#share-this > ul > li {
+	float: left;
+	height: 50px;
+}
+
+#strike-topper {
+	background: #000;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	font-size: 12px;
+	display: none;
+}
+
+#original-site {
+	font-weight: bold;
 }
