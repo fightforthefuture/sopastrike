@@ -150,8 +150,20 @@ strong {
 }
 
 #share-this > ul > li {
-	float: left;
+	margin: 0 auto 0 auto;
 	height: 50px;
+	float: left;
+}
+
+#share-this > ul {
+	margin-left: 300px;
+}
+
+#share-this > ul > li.facebook > a {
+	height: 31px;
+	width: 109px;
+	display: block;
+	background: url(http://freebieber.org/img/buttons/norm_fb.png);
 }
 
 #strike-topper {
