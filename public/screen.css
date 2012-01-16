@@ -124,7 +124,9 @@ header > p > strong {
 }
 
 #call-to-action {
-	height: 395px;
+	height: 195px;
+	padding-top: 20px;
+	background: url(/images/form_background.png) no-repeat;
 }
 
 #help-out p, #call-to-action p, #strike-data p {
@@ -309,3 +311,11 @@ footer hr {
 }
 
 ul li a {text-decoration: none; font-size: 20px;}
+
+
+#strike-data .twitterz p {
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: left;
+	font-family: verdana, sans-serif;
+}
