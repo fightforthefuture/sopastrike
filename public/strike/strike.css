@@ -41,6 +41,10 @@ strong {
 	color: #fff;
 }
 
+.btn.close {
+	text-decoration: none;
+}
+
 #strike-wrapper {
 	width: 800px;
 	margin: 0 auto 0 auto;

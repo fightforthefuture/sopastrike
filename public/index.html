@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="/twitter.bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/screen.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script src="/bootstrap.modal.js"></script>
 	 	<meta property="og:title" content="Strike Against Sopa!" />
 	  <meta property="og:description" content="Internet goes on strike — blackout everywhere. This Wed Jan 18, many of your favorites sites will be unavailable to you to stop web censorship. Tell everyone, petition even more sites to join." />
 	  <meta property="og:image" content="http://sopastrike.com/images/newspaper-folded.jpg" />
@@ -60,11 +61,39 @@
             <h2>Websites: How to Strike</h2>
             <hr/>
             <ol>
-				<li>Black out your website for 12 hours.  Tucows <a href="http://tucowsinc.com/news/2012/01/why-we-dont-like-sopa/">is doing this</a> and so is <a href="http://boingboing.net/2012/01/14/boing-boing-will-go-dark-on-ja.html">BoingBoing</a>.  We will be providing banners and other images before the 18th, check back soon.</li>
-				<li>Direct visitors to <a href="http://americancensorship.org/modal/sopastrikeoverlay.html">this link</a> to contact congress and ask them to tweet #SOPASTRIKE all day. We will be updating this.</li>
+				<li>Black out your website for 12 hours <a href="/strike/">with this page's HTML</a>, or by putting <a data-controls-modal="js-modal">this Javascript</a> into your site's theme. Tucows <a href="http://tucowsinc.com/news/2012/01/why-we-dont-like-sopa/">is doing this</a> and so is <a href="http://boingboing.net/2012/01/14/boing-boing-will-go-dark-on-ja.html">BoingBoing</a>.</li>
+				
+				<li>Other people have made tools to strike. Some other ways to strike:
+				<ul id="tools-list">
+					<li><a href="http://www.zachstronaut.com/lab/text-shadow-box/stop-sopa.html">Zachary Johnson's blackout page</a></li>
+ 
+<li><a href="http://protestsopa.org/">ProtestSOPA.org</a></li>
 
-				<li>Don't be silent that day. Tweet all day from your official company account (#SOPASTRIKE) and share news on sites like reddit.  You will get much love in return from your users, and the bigger the action you do, the more love you will be feeling :) - You can <a href=”https://twitter.com/#!/fightfortheftr”>follow us on twitter</a> for news as the strike gets closer. If you are really feeling shy, you can blackout your site logo / add STOP SOPA messages wherever you can.</li>
+<li><a href="https://www.cloudflare.com/apps/stop_censorship">CloudFlare's Stop Censorship app</a></li>
+<li>Did you make something? Tweet it to <a href="http://twitter.com/#!/search/realtime/%23StrikeTools">#StrikeTools</a></li>
+				</ul>
+				</li>
+				
+				<li>Don't be silent that day. Tweet all day from your official company account (#SOPASTRIKE) and share news on sites like reddit.  You will get much love in return from your users, and the bigger the action you do, the more love you will be feeling :) - You can <a href="https://twitter.com/#!/fightfortheftr">follow us on twitter</a> for news as the strike gets closer. If you are really feeling shy, you can blackout your site logo / add STOP SOPA messages wherever you can.</li>
 			</ol>
+<div id="js-modal" class="fade modal">
+	<div class="modal-header">
+	<a href="#" class="close">&times;</a>
+	<h3>Go On Strike By Adding This Code To Your Theme</h3>
+	</div>
+	<div class="modal-body">
+	<p>Copy this code and paste it into the header of your theme to black your site out in protest of SOPA/PIPA. It will activate only on Wednesday, January 18th.</p>
+	<textarea style="width: 100%; height: 50px;">
+<script>
+var a=new Date;if(18==a.getDate()&&0==a.getMonth()&&2012==a.getFullYear())window.location="http://sopastrike.com/strike";
+</script>	
+	</textarea>
+	</div>
+	<div class="modal-footer">
+	<a href="#" class="btn primary" data-controls-modal="js-modal">Got It!</a>
+	</div>
+
+</div>
           </section>
           <section class="span8">
             <h2>Everyone: Prepare to Strike</h2>

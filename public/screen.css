@@ -306,8 +306,14 @@ footer hr {
 	width: 470px;
 }
 
-ul li a {text-decoration: none; font-size: 20px;}
+ul li a {
+	text-decoration: none; font-size: 20px;
+}
 
+ul#tools-list li a {
+	text-decoration: underline; font-size: inherit;
+	
+}
 
 #strike-data .twitterz p {
 	font-size: 12px;
