@@ -244,8 +244,10 @@ footer h2, section.item h2, #help-out h2, #strike-data h2 {
 	list-style-type: none;
 }
 
-#full-list ul > li a, #strike-data ul > li a {
+#strike-data ul > li, #full-list ul > li a, #strike-data ul > li a {
    font-size: 12px;
+   font-family: arial, sans-serif;
+   color: #000;
    text-decoration: underline;
 }
 
