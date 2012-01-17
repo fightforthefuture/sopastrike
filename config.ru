@@ -6,6 +6,7 @@ use Rack::Static , :urls => {
     "/thanks/" => "/thanks/index.html",
     "/thanks" => "/thanks/index.html",
     "/strike/" => "/strike/index.html", 
+    "/strike" => "/strike/index.html", 
     "/strike/thanks" => "/strike/thanks.html", 
     } , :root => "public"
 
