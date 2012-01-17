@@ -11,7 +11,7 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 
 body, html {
 	font-family: Helvetica, Arial, sans-serif;
-	background: #1B1B1B url(/modal/strike-modal/strike-modal-bg.jpg) top left repeat;
+	background: #1B1B1B url(/strike/strike-modal-bg.jpg) top left repeat;
 	color: #fff;
 }
 
@@ -38,7 +38,11 @@ strong {
 }
 
 #strike-wrapper a {
-	color: blue;
+	color: #fff;
+}
+
+.btn.close {
+	text-decoration: none;
 }
 
 #strike-wrapper {
@@ -50,13 +54,13 @@ strong {
 
 }
 
-#strike-wrapper img {
+#strike-wrapper > div > img#paper {
 	width: 570px;
-	margin: 0 auto 0 auto;
+	margin: 15px auto 0 auto;
 	display: block;
 }
 
-#strike-wrapper form {
+#strike-wrapper > div > form {
 	width: 800px;
 	clear: both;
 	margin: 0 auto 0 auto;
@@ -85,14 +89,14 @@ strong {
 }
 
 #strike-wrapper textarea {
-	padding: 25px 5px 5px 25px;
+	padding: 35px 5px 5px 25px;
 	border: none;
-	font-size: 20px;
+	font-size: 17px;
 	width: 775px;
 	height: 211px;
 	margin: 0 0 0 0;
-	background: transparent url(/modal/strike-modal/quote.png) top left no-repeat;
-	color: #ddd;
+	background: transparent url(/strike/quote.png) top left no-repeat;
+	color: #aaa;
 }
 
 #strike-wrapper input#zip {
@@ -147,4 +151,33 @@ strong {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #930f3c), color-stop(1, #f31661) );
 	background:-moz-linear-gradient( center top, #930f3c 5%, #ff5bb0 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#930f3c', endColorstr='#f31661');
+}
+
+#share-this > ul > li {
+	margin: 0 auto 0 auto;
+	height: 50px;
+	float: left;
+}
+
+#share-this > ul {
+	margin-left: 300px;
+}
+
+#share-this > ul > li.facebook > a {
+	height: 31px;
+	width: 109px;
+	display: block;
+	background: url(http://freebieber.org/img/buttons/norm_fb.png);
+}
+
+#strike-topper {
+	background: #000;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	font-size: 12px;
+	display: none;
+}
+
+#original-site {
+	font-weight: bold;
 }
