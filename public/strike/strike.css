@@ -27,6 +27,7 @@ body, html {
 
 #strike-wrapper.embed h1 {
 	width: 500px;
+	padding-top: 15px;
 }
 
 strong {
@@ -119,7 +120,7 @@ strong {
 	width: 500px;
 	padding: 35px 5px 5px 5px;
 	margin-top: 15px;
-	height: 230px;
+	height: 240px;
 }
 
 #strike-wrapper input#zip {
