@@ -225,18 +225,18 @@ strong {
 	width: 490px;
 }
 
-#strike-wrapper button:hover {
+/*#strike-wrapper button:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3ea400), color-stop(1, #60ff00) );
 	background:-moz-linear-gradient( center top, #930f3c 5%, #f31661 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#930f3c', endColorstr='#f31661');
 	background-color:#f31661;
-}
+}*/
 
-#strike-wrapper button.green:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FF1766), color-stop(1, #B31249) );
-	background:-moz-linear-gradient( center top, #FF1766 5%, #B31249 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#930f3c', endColorstr='#B31249');
-	background-color:#ef027d;
+#strike-wrapper button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3ea400), color-stop(1, #60ff00) );
+	background:-moz-linear-gradient( center top, #930f3c 5%, #f31661 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f31661', endColorstr='#930f3c');
+	background-color:#930f3c;
 }
 #strike-wrapper button:active {
 	position:relative;
