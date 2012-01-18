@@ -25,6 +25,10 @@ body, html {
 	padding: 0 0 0 0;
 }
 
+#strike-wrapper.embed h1 {
+	width: 700px;
+}
+
 strong {
 	font-weight: bold;
 }
@@ -50,6 +54,10 @@ strong {
 	margin: 0 auto 0 auto;
 }
 
+#strike-wrapper.embed {
+	width: 700px;
+}
+
 #strike-wrapper > div {
 
 }
@@ -64,6 +72,10 @@ strong {
 	width: 800px;
 	clear: both;
 	margin: 0 auto 0 auto;
+}
+
+#strike-wrapper.embed > div > form {
+	width: 700px;
 }
 
 #strike-wrapper > form > #info {
@@ -88,6 +100,10 @@ strong {
 	margin: 0 10px 10px 0;
 }
 
+#strike-wrapper.embed input {
+	width: 140px;
+}
+
 #strike-wrapper textarea {
 	padding: 35px 5px 5px 25px;
 	border: none;
@@ -97,6 +113,12 @@ strong {
 	margin: 0 0 0 0;
 	background: transparent url(http://sopastrike.com/strike/quote.png) top left no-repeat;
 	color: #aaa;
+}
+
+#strike-wrapper.embed textarea {
+	width: 700px;
+	padding: 5px;
+	margin-top: 15px;
 }
 
 #strike-wrapper input#zip {
