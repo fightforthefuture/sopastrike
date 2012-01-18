@@ -29,6 +29,10 @@ a {
 	text-decoration: underline;
 }
 
+a.modal-trigger {
+	cursor: pointer;
+}
+
 p, h1, h2, td {
 	color: #000;
 }

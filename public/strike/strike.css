@@ -25,6 +25,11 @@ body, html {
 	padding: 0 0 0 0;
 }
 
+#strike-wrapper.embed h1 {
+	width: 500px;
+	padding-top: 15px;
+}
+
 strong {
 	font-weight: bold;
 }
@@ -50,6 +55,10 @@ strong {
 	margin: 0 auto 0 auto;
 }
 
+#strike-wrapper.embed {
+	width: 500px;
+}
+
 #strike-wrapper > div {
 
 }
@@ -64,6 +73,10 @@ strong {
 	width: 800px;
 	clear: both;
 	margin: 0 auto 0 auto;
+}
+
+#strike-wrapper.embed > div > form {
+	width: 500px;
 }
 
 #strike-wrapper > form > #info {
@@ -88,6 +101,10 @@ strong {
 	margin: 0 10px 10px 0;
 }
 
+#strike-wrapper.embed input {
+	width: 500px;
+}
+
 #strike-wrapper textarea {
 	padding: 35px 5px 5px 25px;
 	border: none;
@@ -99,12 +116,27 @@ strong {
 	color: #aaa;
 }
 
+#strike-wrapper.embed textarea {
+	width: 500px;
+	padding: 35px 5px 5px 5px;
+	margin-top: 15px;
+	height: 240px;
+}
+
 #strike-wrapper input#zip {
 	width: 100px;
 }
 
 #strike-wrapper input#addr1 {
 	width: 230px;
+}
+
+#strike-wrapper.embed input#zip {
+	width: 500px;
+}
+
+#strike-wrapper.embed input#addr1 {
+	width: 500px;
 }
 
 #strike-wrapper input#firstname {
@@ -132,10 +164,13 @@ strong {
 	text-shadow:1px 1px 0px #333;
 	display: block;
 	clear: both;
-	margin: 0 0 10px 0;
 	margin: 0 auto 10px auto;
 	width: 360px;
 	cursor: pointer;
+}
+
+#strike-wrapper.embed button {
+	width: 512px;
 }
 
 #strike-wrapper button:hover {
