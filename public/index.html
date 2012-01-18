@@ -9,8 +9,24 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script src="http://sopastrike.com/strike/jquery.placeholder.js"></script>
 		<script>
-		$('input[placeholder], textarea[placeholder]').placeholder();
-		
+	        /* Default text hider stuff */
+	        $(".default-text").focus(function(){
+	          if ($(this).val() == $(this)[0].title){
+	            $(this).removeClass("default-text-active");
+	            $(this).val("");
+	          }
+	        });
+
+	        $(".default-text").blur(function(){
+	          if ($(this).val() == ""){
+	            $(this).addClass("default-text-active");
+	            $(this).val($(this)[0].title);
+	          }
+	        });
+
+	        $(".default-text").blur();
+	      });
+	    </script>
 		</script>
 		
 		<style>
@@ -60,9 +76,9 @@
         <section id="call-to-action">
           <p>Join the strike yourself:</p>
           <form id="my-blackout" action="http://act.fightforthefuture.org/page/s/sopa-strike-participants" method="post">
-            <input id="nametwo" type="text" name="firstname" placeholder="Name" class="span3">
-            <input type="email" name="email" placeholder="Email" class="span3">
-            <input size="25" id="custom-270" name="custom-270" type="text" class="span5" placeholder="Your website (optional)">
+            <input id="nametwo" type="text" name="firstname" placeholder="Name" title="Name" class="span3 default-text">
+            <input type="email" name="email" placeholder="Email" title="Email" class="span3 default-text">
+            <input size="25" id="custom-270" name="custom-270" type="text" class="span5 default-text" placeholder="Your website (optional)" title="Your website (optional)">
             <button class="btn danger large span4">I'm Going To Strike!</button>
           </form>
           <p class="disclosure">Email optional. <a href="http://fightforthefuture.org">Fight for the Future</a> will contact you about opportunities to meet with your Senator and other campaigns. <a href="http://fightforthefuture.org/privacy">Privacy Policy</a></p>
