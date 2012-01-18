@@ -168,7 +168,7 @@ strong {
 	cursor: pointer;
 }
 
-#strike-wrapper button {
+#strike-wrapper.embed button {
 	width: 512px;
 }
 
