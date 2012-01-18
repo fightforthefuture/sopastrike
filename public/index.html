@@ -15,34 +15,9 @@
 		<script>
 		$(document).ready(function() {
 		    $('input[placeholder],textarea[placeholder]').placeholder();
-		    
-		    /* Default text hider stuff */
-	        $(".default-text").focus(function(){
-	          if ($(this).val() == $(this)[0].title){
-	            $(this).removeClass("default-text-active");
-	            $(this).val("");
-	          }
-	        });
-
-	        $(".default-text").blur(function(){
-	          if ($(this).val() == ""){
-	            $(this).addClass("default-text-active");
-	            $(this).val($(this)[0].title);
-	          }
-	        });
-
-	        $(".default-text").blur();
 		});
 
 		</script>
-		
-		<style>
-		label.placeholder {
-			cursor: text;			
-			padding: 5px 5px ;   
-			color: #999999;				
-		}
-		</style>
 		<script src="/bootstrap.modal.js"></script>
 	 	<meta property="og:title" content="Strike Against Sopa!" />
 	  <meta property="og:description" content="Internet goes on strike — blackout everywhere. This Wed Jan 18, many of your favorites sites will be unavailable to you to stop web censorship. Tell everyone, petition even more sites to join." />
