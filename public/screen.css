@@ -16,6 +16,13 @@
     color:    #777;
 }
 
+/*match placeholder/watermark padding to border+padding for input element*/
+label.placeholder {
+cursor: text;
+padding: 4px 4px 4px 4px;
+color: #999999;
+}
+
 body {
 	background: #f7f7f7 url(/images/broadside-bg.jpg) top center no-repeat;
 }
