@@ -21,6 +21,7 @@ label.placeholder {
 cursor: text;
 padding: 4px 4px 4px 4px;
 color: #999999;
+float: left;
 }
 
 body {
