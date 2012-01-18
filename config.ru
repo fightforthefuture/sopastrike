@@ -8,6 +8,8 @@ use Rack::Static , :urls => {
     "/strike/" => "/strike/index.html", 
     "/strike" => "/strike/index.html", 
     "/strike/thanks" => "/strike/thanks.html", 
+    "/timeline" => "/timeline/index.html", 
+    "/timeline/" => "/timeline/index.html", 
     } , :root => "public"
 
 run Rack::URLMap.new({
