@@ -247,3 +247,11 @@ strong {
 #original-site {
 	font-weight: bold;
 }
+
+#shareitup {
+	position: absolute;
+}
+
+#shareitup div {
+	margin: 5px 0 15px 15px;
+}
