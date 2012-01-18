@@ -15,18 +15,10 @@
 		<script src="http://sopastrike.com/strike/jquery.js"></script>
 		<script src="http://sopastrike.com/strike/jquery.placeholder.js"></script>
 		<script>
-		$('input[placeholder], textarea[placeholder]').placeholder();
-		
+		$(document).ready(function() {
+		    $('input[placeholder],textarea[placeholder]').placeholder();
+		});
 		</script>
-		
-		<style>
-		label.placeholder {
-			cursor: text;			
-
-			padding: 15px 15px 15px 15px;   
-			color: #999999;				
-		}
-		</style>
 
 		<script type="text/javascript">
 		

@@ -15,6 +15,14 @@ body, html {
 	color: #fff;
 }
 
+/*match placeholder/watermark padding to border+padding for input element*/
+label.placeholder {
+cursor: text;
+padding: 4px 4px 4px 4px;
+color: #999999;
+float: left;
+}
+
 a {
 	color: #3ea3d8;
 }
