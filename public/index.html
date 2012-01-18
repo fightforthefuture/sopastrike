@@ -6,35 +6,18 @@
 		<title>SOPA STRIKE - Largest online protest in history - January 18 - blackout your site</title>
 		<link rel="stylesheet" href="/twitter.bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/screen.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-		<script src="http://sopastrike.com/strike/jquery.placeholder.js"></script>
+		<!--[if lt IE 9]>
+		<script src="/html5.js"></script>
+		<link rel="stylesheet" type="text/css" href="/ie.css">
+		<![endif]-->
+		<script src="/jquery.min.js"></script>
+		<script src="/strike/jquery.placeholder.js"></script>
 		<script>
-	        /* Default text hider stuff */
-	        $(".default-text").focus(function(){
-	          if ($(this).val() == $(this)[0].title){
-	            $(this).removeClass("default-text-active");
-	            $(this).val("");
-	          }
-	        });
-
-	        $(".default-text").blur(function(){
-	          if ($(this).val() == ""){
-	            $(this).addClass("default-text-active");
-	            $(this).val($(this)[0].title);
-	          }
-	        });
-
-	        $(".default-text").blur();
+		$(document).ready(function() {
+		    $('input[placeholder],textarea[placeholder]').placeholder();
+		});
 
 		</script>
-		
-		<style>
-		label.placeholder {
-			cursor: text;			
-			padding: 5px 5px ;   
-			color: #999999;				
-		}
-		</style>
 		<script src="/bootstrap.modal.js"></script>
 	 	<meta property="og:title" content="Strike Against Sopa!" />
 	  <meta property="og:description" content="Internet goes on strike — blackout everywhere. This Wed Jan 18, many of your favorites sites will be unavailable to you to stop web censorship. Tell everyone, petition even more sites to join." />
@@ -151,163 +134,192 @@
               <hr>
               <ul>
 	              <!-- PASTE FROM RESEARCHERS -->
-                <li><a href="http://www.businessweek.com/news/2012-01-17/google-plans-home-page-protest-against-u-s-piracy-measures.html">Google</a></li>
-				<li><a href="http://en.wikipedia.org/wiki/Wikipedia:SOPA_initiative/Action"><span>Wikipedia</span></li>
-				<li><a href="http://blog.reddit.com/2012/01/stopped-they-must-be-on-this-all.html">reddit</a></li>
-				<li><a href="http://mozilla.org">Mozilla</a></li>
-				<li><a href="http://wordpress.org/extend/plugins/tags/sopa">WordPress</a></li>
-				<li><a href="http://tumblr.com">Tumblr</a></li>
-				<li><a href="http://vimeo.com">Vimeo</a></li>
-				<li><a href="http://blog.flickr.net/en/2012/01/18/pipa-sopa/">Flickr</a>
-				<li><a href="http://www.wired.com/threatlevel/2012/01/why-weve-censored-wired-com/">Wired</a></li>
-				<li><a href="http://blumenauer.house.gov/">U.S Representative Earl Blumenauer (D-OR)</a></li>
-				<li><a href="https://twitter.com/#!/benhuh/status/157538541155516416">icanhazcheezburger network sites</a></li>
-				<li><a href="https://twitter.com/#!/benhuh/status/157538541155516416">theDailyWhat</a></li>
-				<li><a href="https://twitter.com/#!/benhuh/status/157538541155516416">FailBlog</a></li>
-				<li><a href="http://tucowsinc.com/news/2012/01/why-we-dont-like-sopa/">Tucows</a></li>
-				<li><a href="http://vanillaforums.org/">VanillaForums</a></li>
-				<li><a href="http://michaelmoore.com/">Michael Moore</a></li>
-				<li><a href="http://www.rawstory.com/rs/2012/01/17/announcement-raw-story-to-go-dark-on-january-18-to-protest-sopapipa/">The RawStory</a></li>
-				<li><a href="http://opencongress.com">Open Congress / PPF</a></li>
-				<li><a href="http://blog.archive.org/2012/01/17/12-hours-dark-internet-archive-vs-censorship/">Internet Archive</a></li>
-				<li><a href="http://getmiro.com">Miro</a></li>
-				<li><a href="https://twitter.com/#!/ccianet/status/159624808827584513">Computer & Communications Industry Association</a></li>
-				<li><a href="http://dp.la/">Digital Public Library of America</a></li>
-				<li><a href="http://universalsubtitles.org">Universal Subtitles</a></li>
-				<li><a href="http://www.cdt.org/">Center for Technology and Democracy</a></li>
-				<li><a href="http://eff.org">Electronic Frontier Foundation</a></li>
-				<li><a href="http://g1nbc.net/">G1NBC</a></li>
-				<li><a href="https://twitter.com/#!/Politics1com/status/159147376186114049">Politics1.com</a></li>
-				<li><a href="http://radar.oreilly.com/2012/01/oreilly-dark-protest-sopa-pipa.html">O'Reilly Media</a></li>
-				<li><a href="http://www.nvca.org/">National Venture Capitol Association</a></li>
-				<li><a href="http://www.namecheap.com/">Namecheap</a></li>
-				<li><a href="http://twitpic.com">TwitPic</a></li>
-				<li><a href="http://dotsub.com/">dotSUB</a></li>
-				<li><a href="http://front.moveon.org/the-shocking-facts-about-the-governments-move-to-censor-the-internet/?&rep=4&rc=tw.fol">MoveOn.org</a></li>
-				<li><a href="http://www.gog.com/en/news/gog_com_joins_opposition_to_sopa_and_pipa">Gog.com</li>
-				<li><a href="http://www.minecraft.net">MineCraft</a></li>
-				<li><a href="https://twitter.com/#!/runasand/status/159336983578165248">Tor Project</a></li>
-				<li><a href="http://www.webhostingbuzz.com/blog/2012/01/04/were-firmly-against-sopa/">webhostingbuzz.com</a></li>
-				<li><a href="http://ragemaker.net/">RageMaker</a></li>
-				<li><a href="http://www.destructoid.com/destructoid-joins-pipa-sopa-blackout-protest-on-18th-219591.phtml">Destructiod</a></li>
-				<li><a href="http://thechive.com/2012/01/17/thechive-will-be-going-dark-tomorrow-to-protest-sopapipa/">theCHIVE</a></li>
-				<li><a href="http://thechive.com/2012/01/17/thechive-will-be-going-dark-tomorrow-to-protest-sopapipa/">theBERRY</a></li>
-				<li><a href="http://www.shacknews.com/article/71965/firefall-dev-shutting-down-beta-site-in-protest-of-sopa">Red 5 studios</a></li>
-				<li><a href="http://www.asofterworld.com/">A Softer World</a></li>
-				<li><a href="http://www.facebook.com/questions/10150586295700240/?qa_ref=ssp">PostSecret</a></li>
-				<li><a href="http://www.greenpeace.org/international/en/news/Blogs/makingwaves/were-sorry-youre-not-allowed-to-read-this/blog/38656/">Greenpeace International</a>
-				<li><a href="">The LeakyWiki</a></li>
-				<li><a href="http://www.xda-developers.com/announcements/xda-to-go-dark-on-jan-18th-at-8am-you-can-help-bring-us-back-online/">XDA-Developers</a></li>
-				<li><a href="http://status.net/2012/01/14/identi-ca-blackout-18-jan-2012-8am-8pm-est-to-protest-sopapipa">Indenti.ca</a></li>
-				<li><a href="http://www.majorleaguegaming.com/news/mlgs-network-will-go-black-on-jan-18-to-protest-sopa/">>Major League Gaming</a></li>
-				<li><a href="http://gamepolitics.com/2012/01/17/eca-gamepolitics-goes-dark-protest-sopapipa">The ECA</a></li>
-				</li><a href="http://gamepolitics.com/2012/01/17/eca-gamepolitics-goes-dark-protest-sopapipa">Game Politics</a></li>
-				<li><a href="http://imgur.com/blog/2012/01/16/imgur-joins-blackout/">Imgur</a></li>
-				<li><a href="https://twitter.com/#!/mikepocalyko/status/159280246464593921">Monticello Capitol</a></li>
-				<li><a href="https://crypto.cat/">Crypto Cat</a></li>
-				<li><a href="https://colossalmind.com">Colossal Mind</a></li>
-				<li><a href="https://twitter.com/#!/tweet_fail/status/159084636029456384">TweetFail</a></li>
-				<li><a href="http://erratasec.blogspot.com/2012/01/january-18-sopa-blackout-day.html">Errata Security</a></li>
-				<li><a href="http://freakoutnation.com/2012/01/16/viva-la-revolucion-the-interwebz-is-shutting-down-for-12-hours/">FreakOutNation</a></li>
-				<li><a href="https://twitter.com/#!/slashTHREE/status/159309091167150080">SlashTHREE</a></li>
-				<li><a href="https://twitter.com/#!/TheFocusOnFacts/status/159270701998678016">Focus On the Facts</a></li>
-				<li><a href="https://twitter.com/#!/CanSomerr/status/159308854570659840">City News</a></li>
-				<li><a href="http://strategytune.com/">Strategy Tune</a></li>
-				<li><a href="http://action.progressivecongress.org/p/salsa/web/common/public/signup?signup_page_KEY=4333">Progressive Congress News</a></li>
-				<li><a href="https://twitter.com/#!/bitbucket/status/159005505967235072">bitBucker</a></li>
-				<li><a href="https://twitter.com/#!/WPSecurityLock/status/159305080351371265">WPS Security Lock</a></li>
-				<li><a href="http://news.opensuse.org/2012/01/17/why-opensuse-org-goes-on-strike-tomorrow/">openSUSE</a></li>
-				<li><a href="https://twitter.com/#!/SmirkingChimp/status/159318223660126208">Smirking Chimp</a></li>
-				<li><a href="https://twitter.com/#!/breadnotbullets/status/159301914767536128">Bread Without Bullets</a></li>
-				<li><a href="http://infospace.ischool.syr.edu/2012/01/17/ischool-and-information-space-blackout-stop-sopa-wednesday-118/">iSchool at Syracuse University</a></li>
-				<li><a href="https://twitter.com/#!/il_nomacs/status/159301426798002176">nomacs Image Lounge</a></li>
-				<li><a href="https://twitter.com/#!/computerhope/status/159298890133274624">ComputerHope</a></li>
-				<li><a href="https://twitter.com/#!/PhantomTS/status/159297962483257346">PhantomTS</a></li>
-				<li><a href="https://twitter.com/#!/N2Map/status/159280430036697090">News2Map.com</a></li>
-				<li><a href="https://twitter.com/#!/XsNr/status/159279772558569472">Safex.tk</a></li>
-				<li><a href="https://twitter.com/#!/datelinezero/status/159279444492697601">DatelineZero</a></li>
-				<li><a href="https://twitter.com/#!/datelinezero/status/159279444492697601">Liberty Confidential</a></li>
-				<li><a href="https://twitter.com/#!/viktorixcom/status/159278839627923457">Victor Rix</a></li>
-				<li><a href="https://twitter.com/#!/WJS/status/159276177209565184">WJSimpson</a></li> 
-				<li><a href="https://twitter.com/#!/SpursReloaded/status/159264824612765696">Spurs of The Moment</a></li>
-				<li><a href="http://www.peeje.com/peeje-goes-strike-stop-web-censorship-bills-congress-209">peeje</a></li>
-				<li><a href="DrWright.org">Dr. Stephen Right</a></li>
-				<li><a href="http://tdc.digibase.ca/index.php?topic=3692.0">DigiBase</a></li>
-				<li><a href="http://arvidtp.net/">Tomayko Peters</a></li>
-				<li><a href="https://twitter.com/#!/GTANeXt/status/159259643426775040">GTA-NeXT</a></li>
-				<li><a href="https://twitter.com/#!/JordanKueh/status/159260927865262080">Hertz Gaming</a></li>
-				<li><a href="http://esspc-ebooks.com/">Elegant Solutions Software and Publishing Company</a></li>
-				<li><a href="https://twitter.com/#!/ShortTravelTips/status/159257902610264065">Short Travel Tips</a></li>
-				<li><a href="http://www.soulfriends.com/">SoulFriends</a></li>
-				<li><a href="http://www.jammerdirect.com/Jammunity/JamNouncements/tabid/156/EntryId/137/Jammer-Direct-Joins-S-O-P-A-P-I-P-A-Blackout-Set-For-January-18th-at-8-AM.aspx">JammerDirec</a></li>
-				<li><a href="http://freeinternetpress.com/sopa.php">Free Internet Press</a></li>
-				<li><a href="http://www.youn00b.com/forum0topic3117">youn00b.com</a></li>
-				<li><a href="http://www.popculturemadness.com//">Pop Culture Madness</a></li>
-				<li><a href="http://celebritymagnet.com/">Celebrity Magnet</a></li>
-				<li><a href="http://grandmagazine.com/">Grand Magazine</a></li>
-				<li><a href="http://941mediaproject.com/">941 Media Project</a></li>
-				<li><a href="http://TheLinuxGeeks.info">The Linux Geeks</a></li>
-				<li><a href="http://www.sdx-developers.com/">SDX-Developers</a></li>
-				<li><a href="http://www.occupybirmingham.co.uk/">Occupy Birmingham (UK)</a></li>
-				<li><a href="http://www.livelocalcard.com/">LiveLocalCard.com</a></li>
-				<li><a href="http://www.turkreno.com/">Turkreno</a></li>
-				<li><a href="http://thetaoofpooh.com/The_Tao_of_Pooh/Home.html">The Tao of Pooh</a></li>
-				<li><a href="http://www.jameswadeweaver.com/">James Wade Weaver</a></li>
-				<li><a href="http://lowson.ca/">lowson.ca</a></li>
-				<li><a href="http://www.photography101.org/">Photography 101</a></li>
-				<li><a href="https://twitter.com/#!/GreenCharleston/status/159480962655326208">Go Green Charleston!</a></li>
-				<li><a href="https://twitter.com/#!/elitemrp/status/159480474467700736">eliteMRP</a></li>
-				<li><a href="https://twitter.com/#!/nsryberg/status/159093935694807041">Antjepolis.com</a></li>
-				<li><a href="https://twitter.com/#!/StonewallYDems/status/159090760166277120">Stonewall Young Democrats</a></li>
-				<li><a href="https://twitter.com/#!/appblitz/status/159089285700661248">AppBlitz</a></li>
-				<li><a href="https://twitter.com/#!/browncafe/status/159089177542139904">Brown Cafe</a></li>
-				<li><a href="https://twitter.com/#!/crushlabs/status/159085629303570432">Crush Labs</a></li>
-				<li><a href="http://teapartywest.com/">Tea Party West</a></li>
-				<li><a href="http://antonamor.com/About.html">Antonamor</a></li>
-				<li><a href="http://www.rockandwater.net/sopastrike.html">RockAndWater.net</a></li>
-				<li><a href="http://elderscrolls.wikia.com/wiki/User_blog:Timeoin/Warning:_We%27re_going_offline_shortly">Elder Scrolls Wikia</a></li>
-				<li><a href="https://twitter.com/#!/CPAInfinity/status/159673643603988480">CPA Infinity </a></li>
-				<li><a href="http://rockkit.com/">Rockkit Records</a></li>
-				<li><a href="http://www.dreadlockssite.com/">Deadlock Site</a></li>
-				<li><a href="https://twitter.com/#!/nekosilvertail/status/159255334228205568">team-CTC</a></li>
-				<li><a href="https://twitter.com/#!/TommyWierper/status/159257484689805312">Tommy Wierper</a></li>
-				<li><a href="http://ronbercume.com/sopa-protest-tomorrow/">Ron Bercume Design</a></li>
-				<li><a href="https://twitter.com/#!/jazzs3quence/status/159313463880065024">Jazz Sequence</a></li>
-				<li><a href="http://t.co/GKaVy7up">Plague Studio</a></li>
-				<li><a href="http://t.co/vNgY5VhO">ViperZeroOne</a></li>
-				<li><a href="http://mssmag.com/">Motorcycle Street and Strip Magazine</a></li>
-				<li><a href="http://bluedragoncreations.com/">Blue Dragon Creations</a></li>
-				<li><a href="http://brianadragon.com/">Briana Dragon</a></li>
-				<li><a href="http://thevampireslair.com/">The Vampire's Lair</a></li>
-				<li><a href="http://www.elephant-talk.com/wiki/ETWiki_Home">Elephant Talk Wiki</a></li>
-				<li><a href="http://thecomeandgo.tumblr.com/">TheComeAndGo</a></li>
-				<li><a href="https://twitter.com/#!/katchabilek/status/159259429844418561">katchabilek</a></li>
-				<li><a href="http://cparmycentral.com/">CPAarmy Central</a></li>
-				<li><a href="http://theskaterack.com/">The Skate Rack</a></li>
-				<li><a href="http://whitehouse.gov1.info/">whitehouse.gov1.info</a></li>
-				<li><a href="http://www.memphisghost.com/">The Memphis Ghost Hunters</a></li>
-				<li><a href="http://www.cerebralboinkfest.blogspot.com/">Cerebralboinkfest</a></li>
-				<li><a href="http://thegeekychic.wordpress.com/">The Geeky Chic</a></li>
-				<li><a href="http://clockworkrpg.com/index.php?act=idx">Clockwork RPG</a></li>
-				<li><a href="http://www.bepenfriends.com/">Be Open Friends</a></li>
-				<li><a href="http://seo-wolf.com/">SEO Wolf</a></li>
-				<li><a href="http://teenwitchfanclub.com/">TeenWitch FanClub</a></li>
-				<li><a href="http://freelancedesignz.com/2012/01/18/stop-censorship/">Freelance Designz</a></li>
-				<li><a href="http://www.5point.info/">5point.info</a></li>
-				<li><a href="http://www.bluefirestudios.com/">Bluefire Studios</a></li>
-				<li><a href="http://mgtrepair.net/">mgtrepair.net</a></li>
-				<li><a href="http://handi-maid.com/">Handi Maid</a></li>
-				<li><a href="http://www.travelswithdavid.wordpress.com/">Travels With David</a></li>
-				<li><a href="http://www.veteranspostnews.com/">Veterans Press News </a></li>
-				<li><a href="http://digitalmarketingspeak.com/">Digital Marketing Speak</a></li>
-				<li><a href="http://dancarroll.org/">Dan Carroll</a></li>
-				<li><a href="http://www.stormchaser1.net/">Stormchaser1.net</a></li>
+	              <li><a href="http://www.businessweek.com/news/2012-01-17/google-plans-home-page-protest-against-u-s-piracy-measures.html">Google</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Wikipedia:SOPA_initiative/Action"><span>Wikipedia</span></li>
+<li><a href="http://blog.reddit.com/2012/01/stopped-they-must-be-on-this-all.html">reddit</a></li>
+<li><a href="http://mozilla.org">Mozilla</a></li>
+<li><a href="http://wordpress.org/extend/plugins/tags/sopa">WordPress</a></li>
+<li><a href="http://tumblr.com">Tumblr</a></li>
+<li><a href="http://vimeo.com">Vimeo</a></li>
+<li><a href="http://blog.flickr.net/en/2012/01/18/pipa-sopa/">Flickr</a>
+<li><a href="https://twitter.com/#!/moot/status/159717742839218176">4chan</a></li>
+<li><a href="http://www.wired.com/threatlevel/2012/01/why-weve-censored-wired-com/">Wired</a></li>
+<li><a href="http://blumenauer.house.gov/">U.S Representative Earl Blumenauer (D-OR)</a></li>
+<li><a href="http://eshoo.house.gov/">U.S Representative Anna G. Eshoo (D-CA)</a></li>
+<li><a href="https://twitter.com/#!/benhuh/status/157538541155516416">icanhazcheezburger network sites</a></li>
+<li><a href="https://twitter.com/#!/benhuh/status/157538541155516416">theDailyWhat</a></li>
+<li><a href="https://twitter.com/#!/benhuh/status/157538541155516416">FailBlog</a></li>
+<li><a href="http://www.craigslist.org/about/sites">Craigslist</a></li>
+<li><a href="http://tucowsinc.com/news/2012/01/why-we-dont-like-sopa/">Tucows</a></li>
+<li><a href="http://vanillaforums.org/">VanillaForums</a></li>
+<li><a href="http://michaelmoore.com/">Michael Moore</a></li>
+<li><a href="http://petergabriel.com/">Peter Gabriel</a></li>
+<li><a href="http://www.rawstory.com/rs/2012/01/17/announcement-raw-story-to-go-dark-on-january-18-to-protest-sopapipa/">The RawStory</a></li>
+<li><a href="http://www.aljadeed.tv/">Al Jadeed TV</a></li>
+<li><a href="http://www.wikia.com/Wikia">Wikia</a></li>
 
-				
-
-				
+<li><a href="http://opencongress.com">Open Congress / PPF</a></li>
+<li><a href="http://blog.archive.org/2012/01/17/12-hours-dark-internet-archive-vs-censorship/">Internet Archive</a></li>
+<li><a href="http://getmiro.com">Miro</a></li>
+<li><a href="https://twitter.com/#!/ccianet/status/159624808827584513">Computer & Communications Industry Association</a></li>
+<li><a href="http://dp.la/">Digital Public Library of America</a></li>
+<li><a href="http://universalsubtitles.org">Universal Subtitles</a></li>
+<li><a href="http://www.cdt.org/">Center for Technology and Democracy</a></li>
+<li><a href="http://eff.org">Electronic Frontier Foundation</a></li>
+<li><a href="http://g1nbc.net/">G1NBC</a></li>
+<li><a href="https://twitter.com/#!/Politics1com/status/159147376186114049">Politics1.com</a></li>
+<li><a href="http://radar.oreilly.com/2012/01/oreilly-dark-protest-sopa-pipa.html">O'Reilly Media</a></li>
+<li><a href="http://www.nvca.org/">National Venture Capitol Association</a></li>
+<li><a href="http://www.namecheap.com/">Namecheap</a></li>
+<li><a href="http://twitpic.com">TwitPic</a></li>
+<li><a href="http://dotsub.com/">dotSUB</a></li>
+<li><a href="http://front.moveon.org/the-shocking-facts-about-the-governments-move-to-censor-the-internet/?&rep=4&rc=tw.fol">MoveOn.org</a></li>
+<li><a href="http://www.gog.com/en/news/gog_com_joins_opposition_to_sopa_and_pipa">Gog.com</li>
+<li><a href="http://www.minecraft.net">MineCraft</a></li>
+<li><a href="https://twitter.com/#!/runasand/status/159336983578165248">Tor Project</a></li>
+<li><a href="http://www.webhostingbuzz.com/blog/2012/01/04/were-firmly-against-sopa/">webhostingbuzz.com</a></li>
+<li><a href="http://ragemaker.net/">RageMaker</a></li>
+<li><a href="http://www.destructoid.com/destructoid-joins-pipa-sopa-blackout-protest-on-18th-219591.phtml">Destructiod</a></li>
+<li><a href="http://www.bloginity.com/">bloginity</a></li>
+<li><a href="http://thechive.com/2012/01/17/thechive-will-be-going-dark-tomorrow-to-protest-sopapipa/">theCHIVE</a></li>
+<li><a href="http://thechive.com/2012/01/17/thechive-will-be-going-dark-tomorrow-to-protest-sopapipa/">theBERRY</a></li>
+<li><a href="http://www.shacknews.com/article/71965/firefall-dev-shutting-down-beta-site-in-protest-of-sopa">Red 5 studios</a></li>
+<li><a href="http://www.asofterworld.com/">A Softer World</a></li>
+<li><a href="http://www.facebook.com/questions/10150586295700240/?qa_ref=ssp">PostSecret</a></li>
+<li><a href="http://www.greenpeace.org/international/en/news/Blogs/makingwaves/were-sorry-youre-not-allowed-to-read-this/blog/38656/">Greenpeace International</a>
+<li><a href="">The LeakyWiki</a></li>
+<li><a href="http://www.eyeidea.com/">EyeIdea</a></li>
+<li><a href="http://www.xda-developers.com/announcements/xda-to-go-dark-on-jan-18th-at-8am-you-can-help-bring-us-back-online/">XDA-Developers</a></li>
+<li><a href="http://status.net/2012/01/14/identi-ca-blackout-18-jan-2012-8am-8pm-est-to-protest-sopapipa">Indenti.ca</a></li>
+<li><a href="http://www.majorleaguegaming.com/news/mlgs-network-will-go-black-on-jan-18-to-protest-sopa/">>Major League Gaming</a></li>
+<li><a href="http://gamepolitics.com/2012/01/17/eca-gamepolitics-goes-dark-protest-sopapipa">The ECA</a></li>
+<li><a href="http://gamepolitics.com/2012/01/17/eca-gamepolitics-goes-dark-protest-sopapipa">Game Politics</a></li>
+<li><a href="http://imgur.com/blog/2012/01/16/imgur-joins-blackout/">Imgur</a></li>
+<li><a href="https://twitter.com/#!/mikepocalyko/status/159280246464593921">Monticello Capitol</a></li>
+<li><a href="https://crypto.cat/">Crypto Cat</a></li>
+<li><a href="https://colossalmind.com">Colossal Mind</a></li>
+<li><a href="https://twitter.com/#!/tweet_fail/status/159084636029456384">TweetFail</a></li>
+<li><a href="http://erratasec.blogspot.com/2012/01/january-18-sopa-blackout-day.html">Errata Security</a></li>
+<li><a href="http://freakoutnation.com/2012/01/16/viva-la-revolucion-the-interwebz-is-shutting-down-for-12-hours/">FreakOutNation</a></li>
+<li><a href="https://twitter.com/#!/slashTHREE/status/159309091167150080">SlashTHREE</a></li>
+<li><a href="https://twitter.com/#!/TheFocusOnFacts/status/159270701998678016">Focus On the Facts</a></li>
+<li><a href="https://twitter.com/#!/CanSomerr/status/159308854570659840">City News</a></li>
+<li><a href="http://strategytune.com/">Strategy Tune</a></li>
+<li><a href="http://action.progressivecongress.org/p/salsa/web/common/public/signup?signup_page_KEY=4333">Progressive Congress News</a></li>
+<li><a href="https://twitter.com/#!/bitbucket/status/159005505967235072">bitBucker</a></li>
+<li><a href="https://twitter.com/#!/WPSecurityLock/status/159305080351371265">WPS Security Lock</a></li>
+<li><a href="http://news.opensuse.org/2012/01/17/why-opensuse-org-goes-on-strike-tomorrow/">openSUSE</a></li>
+<li><a href="https://twitter.com/#!/SmirkingChimp/status/159318223660126208">Smirking Chimp</a></li>
+<li><a href="https://twitter.com/#!/breadnotbullets/status/159301914767536128">Bread Without Bullets</a></li>
+<li><a href="http://infospace.ischool.syr.edu/2012/01/17/ischool-and-information-space-blackout-stop-sopa-wednesday-118/">iSchool at Syracuse University</a></li>
+<li><a href="https://twitter.com/#!/il_nomacs/status/159301426798002176">nomacs Image Lounge</a></li>
+<li><a href="https://twitter.com/#!/computerhope/status/159298890133274624">ComputerHope</a></li>
+<li><a href="https://twitter.com/#!/PhantomTS/status/159297962483257346">PhantomTS</a></li>
+<li><a href="https://twitter.com/#!/N2Map/status/159280430036697090">News2Map.com</a></li>
+<li><a href="https://twitter.com/#!/XsNr/status/159279772558569472">Safex.tk</a></li>
+<li><a href="https://twitter.com/#!/datelinezero/status/159279444492697601">DatelineZero</a></li>
+<li><a href="https://twitter.com/#!/datelinezero/status/159279444492697601">Liberty Confidential</a></li>
+<li><a href="https://twitter.com/#!/viktorixcom/status/159278839627923457">Victor Rix</a></li>
+<li><a href="https://twitter.com/#!/WJS/status/159276177209565184">WJSimpson</a></li> 
+<li><a href="https://twitter.com/#!/SpursReloaded/status/159264824612765696">Spurs of The Moment</a></li>
+<li><a href="http://www.peeje.com/peeje-goes-strike-stop-web-censorship-bills-congress-209">peeje</a></li>
+<li><a href="DrWright.org">Dr. Stephen Right</a></li>
+<li><a href="http://tdc.digibase.ca/index.php?topic=3692.0">DigiBase</a></li>
+<li><a href="http://arvidtp.net/">Tomayko Peters</a></li>
+<li><a href="https://twitter.com/#!/GTANeXt/status/159259643426775040">GTA-NeXT</a></li>
+<li><a href="https://twitter.com/#!/JordanKueh/status/159260927865262080">Hertz Gaming</a></li>
+<li><a href="http://esspc-ebooks.com/">Elegant Solutions Software and Publishing Company</a></li>
+<li><a href="https://twitter.com/#!/ShortTravelTips/status/159257902610264065">Short Travel Tips</a></li>
+<li><a href="http://www.soulfriends.com/">SoulFriends</a></li>
+<li><a href="http://www.jammerdirect.com/Jammunity/JamNouncements/tabid/156/EntryId/137/Jammer-Direct-Joins-S-O-P-A-P-I-P-A-Blackout-Set-For-January-18th-at-8-AM.aspx">JammerDirec</a></li>
+<li><a href="http://freeinternetpress.com/sopa.php">Free Internet Press</a></li>
+<li><a href="http://www.youn00b.com/forum0topic3117">youn00b.com</a></li>
+<li><a href="http://www.popculturemadness.com//">Pop Culture Madness</a></li>
+<li><a href="http://celebritymagnet.com/">Celebrity Magnet</a></li>
+<li><a href="http://grandmagazine.com/">Grand Magazine</a></li>
+<li><a href="http://941mediaproject.com/">941 Media Project</a></li>
+<li><a href="http://TheLinuxGeeks.info">The Linux Geeks</a></li>
+<li><a href="http://www.sdx-developers.com/">SDX-Developers</a></li>
+<li><a href="http://www.occupybirmingham.co.uk/">Occupy Birmingham (UK)</a></li>
+<li><a href="http://www.livelocalcard.com/">LiveLocalCard.com</a></li>
+<li><a href="http://www.turkreno.com/">Turkreno</a></li>
+<li><a href="http://thetaoofpooh.com/The_Tao_of_Pooh/Home.html">The Tao of Pooh</a></li>
+<li><a href="http://www.jameswadeweaver.com/">James Wade Weaver</a></li>
+<li><a href="http://lowson.ca/">lowson.ca</a></li>
+<li><a href="http://www.photography101.org/">Photography 101</a></li>
+<li><a href="https://twitter.com/#!/GreenCharleston/status/159480962655326208">Go Green Charleston!</a></li>
+<li><a href="https://twitter.com/#!/elitemrp/status/159480474467700736">eliteMRP</a></li>
+<li><a href="https://twitter.com/#!/nsryberg/status/159093935694807041">Antjepolis.com</a></li>
+<li><a href="https://twitter.com/#!/StonewallYDems/status/159090760166277120">Stonewall Young Democrats</a></li>
+<li><a href="https://twitter.com/#!/appblitz/status/159089285700661248">AppBlitz</a></li>
+<li><a href="https://twitter.com/#!/browncafe/status/159089177542139904">Brown Cafe</a></li>
+<li><a href="https://twitter.com/#!/crushlabs/status/159085629303570432">Crush Labs</a></li>
+<li><a href="http://teapartywest.com/">Tea Party West</a></li>
+<li><a href="http://antonamor.com/About.html">Antonamor</a></li>
+<li><a href="http://www.rockandwater.net/sopastrike.html">RockAndWater.net</a></li>
+<li><a href="http://elderscrolls.wikia.com/wiki/User_blog:Timeoin/Warning:_We%27re_going_offline_shortly">Elder Scrolls Wikia</a></li>
+<li><a href="https://twitter.com/#!/CPAInfinity/status/159673643603988480">CPA Infinity </a></li>
+<li><a href="http://rockkit.com/">Rockkit Records</a></li>
+<li><a href="http://www.dreadlockssite.com/">Deadlock Site</a></li>
+<li><a href="https://twitter.com/#!/nekosilvertail/status/159255334228205568">team-CTC</a></li>
+<li><a href="https://twitter.com/#!/TommyWierper/status/159257484689805312">Tommy Wierper</a></li>
+<li><a href="http://ronbercume.com/sopa-protest-tomorrow/">Ron Bercume Design</a></li>
+<li><a href="https://twitter.com/#!/jazzs3quence/status/159313463880065024">Jazz Sequence</a></li>
+<li><a href="http://t.co/GKaVy7up">Plague Studio</a></li>
+<li><a href="http://t.co/vNgY5VhO">ViperZeroOne</a></li>
+<li><a href="http://mssmag.com/">Motorcycle Street and Strip Magazine</a></li>
+<li><a href="http://bluedragoncreations.com/">Blue Dragon Creations</a></li>
+<li><a href="http://brianadragon.com/">Briana Dragon</a></li>
+<li><a href="http://thevampireslair.com/">The Vampire's Lair</a></li>
+<li><a href="http://www.elephant-talk.com/wiki/ETWiki_Home">Elephant Talk Wiki</a></li>
+<li><a href="http://thecomeandgo.tumblr.com/">TheComeAndGo</a></li>
+<li><a href="https://twitter.com/#!/katchabilek/status/159259429844418561">katchabilek</a></li>
+<li><a href="http://cparmycentral.com/">CPAarmy Central</a></li>
+<li><a href="http://theskaterack.com/">The Skate Rack</a></li>
+<li><a href="http://whitehouse.gov1.info/">whitehouse.gov1.info</a></li>
+<li><a href="http://www.memphisghost.com/">The Memphis Ghost Hunters</a></li>
+<li><a href="http://www.cerebralboinkfest.blogspot.com/">Cerebralboinkfest</a></li>
+<li><a href="http://thegeekychic.wordpress.com/">The Geeky Chic</a></li>
+<li><a href="http://clockworkrpg.com/index.php?act=idx">Clockwork RPG</a></li>
+<li><a href="http://www.bepenfriends.com/">Be Open Friends</a></li>
+<li><a href="http://seo-wolf.com/">SEO Wolf</a></li>
+<li><a href="http://teenwitchfanclub.com/">TeenWitch FanClub</a></li>
+<li><a href="http://freelancedesignz.com/2012/01/18/stop-censorship/">Freelance Designz</a></li>
+<li><a href="http://www.5point.info/">5point.info</a></li>
+<li><a href="http://www.bluefirestudios.com/">Bluefire Studios</a></li>
+<li><a href="http://mgtrepair.net/">mgtrepair.net</a></li>
+<li><a href="http://handi-maid.com/">Handi Maid</a></li>
+<li><a href="http://www.travelswithdavid.wordpress.com/">Travels With David</a></li>
+<li><a href="http://www.veteranspostnews.com/">Veterans Press News </a></li>
+<li><a href="http://digitalmarketingspeak.com/">Digital Marketing Speak</a></li>
+<li><a href="http://dancarroll.org/">Dan Carroll</a></li>
+<li><a href="http://www.stormchaser1.net/">Stormchaser1.net</a></li>
+<li><a href="http://www.twitter.com/TheMovieVault">The Movie Vault</a></li>
+<li><a href="https://twitter.com/#!/JRLComputers/status/159695084026200064">JRL Computer</a></li>
+<li><a href="http://www.elforodetaxco.com/">Elforodetaxco.com</a></li>
+<li><a href="http://www.scavenger-hunt-guru.com/">Scavenger-Hunt Guru</a></li>
+<li><a href="http://www.inlandempire.us/">Inland Empire</a></li>
+<li><a href="http://jackterror.com/">Jack Terror</a></li>
+<li><a href="http://music4nerds.com/">Music4nerds</a></li>
+<li><a href="http://gavialib.com/">GaviaLib.com</a></li>
+<li><a href="http://www.dataprotectgroup.com/">Data Protect Group</a></li>
+<li><a href="http://www.webrats.com/">WebRats group</a></li>
+<li><a href="http://nolanwebdev.com/">Nolan Web Development</a></li>
+<li><a href="http://GhettoWebmaster.com">Ghetto Webmaster</a></li>
+<li><a href="http://qayemni.com/>qa yemni</a></li>
+<li><a href="http://www.7iber.com/">7iber.com</a></li>
+<li><a href="http://mindprod.com/">mindprod</a></li>
+<li><a href="https://twitter.com/#!/NoSurfMusic/status/159697495864262657">NoSurfMusic</a></li>
+<li><a href="http://evolutiongames.net/dekaron/forums/">Evolution Games</a></li>
+<li><a href="http://hemarori.com/">hemarori.com</a></li>
+<li><a href="http://www.etf2l.org/">European Team Fortress 2 League</a></li>
+<li><a href="http://greenhostingdiscount.com">Green Hosting Discount</a></li>
+<li><a href="http://Ranker.com">Ranker.com</a></li>
+<li><a href="http://homesoccerjersey.com/">Home Soccer Jersey</a></li>
+<li><a href="https://twitter.com/#!/geekgirlworld/status/159752238431076353">Geek Girl World</a></li>
+<li><a href="http://extrafuture.com">Extra Future</a></li>
 				        <!-- END PASTE FROM RESEARCHERS -->
-              </ul>    
+              </ul>
          		<p class="span12" style="line-height: 1.4; clear: both; text-align: left; margin-left: 20px; font-size: 14px;">If you can also tweet at us at <a href="http://twitter.com/fightfortheftr">@FightForTheFTR</a> from your official Twitter account, it will be easier for us to verify your participation.  A blog post about why you are striking is great too!</p>
             </div>
             <div class="span4 twitterz">
