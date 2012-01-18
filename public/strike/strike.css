@@ -102,7 +102,8 @@ strong {
 }
 
 #strike-wrapper.embed input {
-	width: 500px;
+	width: 230px;
+	margin-right: 8px;
 }
 
 #strike-wrapper textarea {
@@ -132,11 +133,11 @@ strong {
 }
 
 #strike-wrapper.embed input#zip {
-	width: 500px;
+	width: 130px;
 }
 
 #strike-wrapper.embed input#addr1 {
-	width: 500px;
+	width: 330px;
 }
 
 #strike-wrapper input#firstname {
@@ -170,7 +171,7 @@ strong {
 }
 
 #strike-wrapper.embed button {
-	width: 512px;
+	width: 490px;
 }
 
 #strike-wrapper button:hover {
