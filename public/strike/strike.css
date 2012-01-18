@@ -195,6 +195,32 @@ strong {
 	cursor: pointer;
 }
 
+#strike-wrapper button.green {
+	-moz-box-shadow:inset 0px 1px 0px 0px #FB6DA8;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #FB6DA8;
+	box-shadow:inset 0px 1px 0px 0px #389400;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #60ff00), color-stop(1, #3ea400) );
+	background:-moz-linear-gradient( center top, #f31661 5%, #930f3c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f31661', endColorstr='#930f3c');
+	background-color:#f31661;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #4cca00;
+	color:#ffffff;
+	font-family:arial;
+	font-size:24px;
+	font-weight:bold;
+	padding:7px 5px 7px 5px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #333;
+	display: block;
+	clear: both;
+	margin: 0 auto 10px auto;
+	width: 360px;
+	cursor: pointer;
+}
+
 #strike-wrapper.embed button {
 	width: 490px;
 }
