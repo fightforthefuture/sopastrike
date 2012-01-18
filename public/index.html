@@ -8063,6 +8063,16 @@
 </section>
       </div>
 		</div>
-		
+	<script>
+	// Setup tracking for form submisison on #censor
+	    var trackingFn = function() {
+	      window.optimizely = window.optimizely || [];
+	      window.optimizely.push(["trackEvent", "SubmittedForm"]);
+	    }
+
+	    $('#my-blackout').submit(function() {
+	      trackingFn();
+	    });		
+	</script>
 	</body>
 </html>
