@@ -11,6 +11,8 @@ use Rack::Static , :urls => {
     "/strike/thanks/" => "/strike/thanks", 
     "/timeline" => "/timeline/index.html", 
     "/timeline/" => "/timeline/index.html", 
+    "/numbers/" => "/numbers/index.html", 
+    "/numbers" => "/numbers/", 
     } , :root => "public"
 
 run Rack::URLMap.new({
