@@ -1,0 +1,56 @@
+body {
+	background: #fafafa;
+	color: #666;
+}
+
+#blurb > h2 {
+	margin-top: 100px;
+	position: fixed;
+	width: 250px;
+	font-size: 30px;
+}
+
+#blurb > p {
+	position: fixed;
+	margin-top: 150px;
+	width: 250px;
+}
+
+#timeline-container {
+	margin-left: 330px;
+	margin-top: 100px;
+	background: transparent url(line-bg.png) top left repeat-y;
+}
+
+#share {
+	position: fixed;
+	margin-top: 250px;
+}
+
+#timeline-container > h2 {
+	float: left;
+	font-size: 18px;
+	width: 150px;
+	position: absolute;
+	text-align: right;
+	line-height: 24px;
+}
+
+#timeline-container > ul {
+	margin-left: 200px;
+	clear: both;
+	margin-bottom: 50px;
+	min-height: 100px;
+}
+
+#timeline-container li {
+	list-style-type: none;
+	margin-left: 0;
+	color: #444;
+	margin-bottom: 5px;
+}
+
+#timeline-container > ul > li:first-child {
+	font-size: 18px;
+	line-height: 24px;
+}
