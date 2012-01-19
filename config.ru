@@ -12,7 +12,7 @@ use Rack::Static , :urls => {
     "/timeline" => "/timeline/index.html", 
     "/timeline/" => "/timeline/index.html", 
     "/numbers/" => "/numbers/index.html", 
-    "/numbers" => "/numbers/", 
+    "/numbers/" => "/numbers/index.html", 
     } , :root => "public"
 
 run Rack::URLMap.new({
