@@ -11,12 +11,17 @@
 		<link rel="stylesheet" type="text/css" href="/ie.css">
 		<![endif]-->
 		<script src="/jquery.min.js"></script>
+		<script src="/us-or-no.js"></script>
 		<script src="/strike/jquery.placeholder.js"></script>
 		<script>
 		$(document).ready(function() {
 		    $('input[placeholder],textarea[placeholder]').placeholder();
 		});
 
+		function wrong_country() {
+			$(".us").toggle();
+			$(".not-us").toggle();
+		}
 		</script>
 		<script src="/bootstrap.modal.js"></script>
 	 	<meta property="og:title" content="Strike Against Sopa!" />
@@ -62,16 +67,54 @@
         </header>
 
         <section id="call-to-action">
-          <p>Sign up to flood Congress with phonecalls if SOPA returns:</p>
-          <form id="my-blackout" action="http://act.fightforthefuture.org/page/s/sopa-senate-calls" method="post">
-            <input id="nametwo" type="text" name="firstname" placeholder="Name" title="Name" class="span5 default-text">
-            <input type="email" name="email" placeholder="Email" title="Email" class="span3 default-text">
-            <input size="25" id="zip" name="zip" type="text" class="span3 default-text" placeholder="Zip (optional)" title="Your website (optional)">
-            <button class="btn danger large span4">I'll make calls</button>
-          </form>
+			<div class="us">
+	          <p>Sign up to flood Congress with phonecalls if SOPA returns:</p>
+	          <form id="my-blackout" action="http://act.fightforthefuture.org/page/s/sopa-senate-calls" method="post">
+	            <input id="nametwo" type="text" name="firstname" placeholder="Name" title="Name" class="span5 default-text">
+	            <input type="email" name="email" placeholder="Email" title="Email" class="span3 default-text">
+	            <input size="25" id="zip" name="zip" type="text" class="span3 default-text" placeholder="Zip (optional)" title="Your website (optional)">
+	            <button class="btn danger large span4">I'll make calls</button>
+	          </form>
+			</div>
+			<div class="not-us" style="display: none;">
+	          <p>Not in the us? Petition the state department:</p>
+	          <form id="my-blackout" action="https://donate.fightforthefuture.org/page/signup/state-dept-petition" method="post">
+	         
+	            <input style="margin-left: 140px;" type="email" name="email" placeholder="Email" title="Email" class="span6 default-text">
+	            <button class="btn danger large span4" style="margin-left: 20px;">Sign The Petition</button>
+	          </form>
+			</div>
+			<script>
+			// Setup tracking for form submisison on #censor
+			    var trackingFn = function() {
+			      window.optimizely = window.optimizely || [];
+			      window.optimizely.push(["trackEvent", "SubmittedForm"]);
+			    }
+
+			    $('#my-blackout').submit(function() {
+			      trackingFn();
+			    });
 
 
-		
+					//function geolocate(timezone, cityPrecision)
+					var visitorGeolocation = new geolocate(false, true);
+
+					//Check for cookie and run a callback function to execute after geolocation is read either from cookie or IPInfoDB API
+					//$(document).ready(function(){alert(visitorGeolocation.getField('countryCode'))}) doesnt work with google Chrome, this is why a callback is used instead
+					var callback = function(){
+						// alert('Visitor country code : ' + visitorGeolocation.getField('countryCode'));
+						// $('#country').text(visitorGeolocation.getField('countryCode'));
+						if (visitorGeolocation.getField('countryCode') != 'US') {
+							wrong_country();
+							$('.wrong').show();
+						} 
+				};
+					visitorGeolocation.checkcookie(callback);
+					$('.wrong').show();
+					$('.wrong').click(function() {
+					  wrong_country();
+					});
+			</script>
 		
 		
           <p class="disclosure">Email optional. <a href="http://fightforthefuture.org">Fight for the Future</a> will contact you about opportunities to meet with your Senator and other campaigns. <a href="http://fightforthefuture.org/privacy">Privacy Policy</a></p>
@@ -392,16 +435,6 @@
 </section>
       </div>
 		</div>
-	<script>
-	// Setup tracking for form submisison on #censor
-	    var trackingFn = function() {
-	      window.optimizely = window.optimizely || [];
-	      window.optimizely.push(["trackEvent", "SubmittedForm"]);
-	    }
 
-	    $('#my-blackout').submit(function() {
-	      trackingFn();
-	    });		
-	</script>
 	</body>
 </html>
