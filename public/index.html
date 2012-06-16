@@ -89,10 +89,16 @@
         <section id="call-to-action">
 			<div class="us">
 	          <p>Sign up to flood Congress with phonecalls if SOPA returns:</p>
-	          <form id="my-blackout" action="http://a.fightforthefuture.org/act/" method="post">
-	            <input id="nametwo" type="text" name="name" placeholder="Name" title="Name" class="span5 default-text">
-	            <input type="email" name="email" placeholder="Email" title="Email" class="span3 default-text">
-	            <input size="25" id="zip" name="zip" type="text" class="span3 default-text" placeholder="Zip (optional)" title="Your website (optional)">
+	          <form id="my-blackout" action="http://nt.salsalabs.com/save" method="post">
+	            <input id="nametwo" type="text" name="Name" placeholder="Name" title="Name" class="span5 default-text">
+	            <input type="email" name="Email" placeholder="Email" title="Email" class="span3 default-text">
+	            <input size="25" id="zip" name="Zip" type="text" class="span3 default-text" placeholder="Zip (optional)" title="Your website (optional)">
+							<input type="hidden" name="organization_KEY" value="501"/>
+							<input type="hidden" name="redirect" value="http://sopastrike.com/thanks/"> 
+							<input type="hidden" name="object" value="supporter"/>
+							<input type="hidden" name="ip" id="signup_ip" />
+							<input type="hidden" name="user_agent" id="user_agent" />
+							<input type="hidden" name="receive_email" value="3">
 	            <button class="btn danger large span4">I'll make calls</button>
 				<input type="hidden" name="page" value="Post_SOPA_Strike_Calls">
 
@@ -100,15 +106,6 @@
 	          </form>
 			</div>
 			<div class="not-us" style="display: none;">
-	          <p>Not in the us? Petition the state department:</p>
-	          <form id="my-blackout" action="http://a.fightforthefuture.org/act/" method="post">
-	         
-	            <input style="margin-left: 140px;" type="email" name="email" placeholder="Email" title="Email" class="span6 default-text">
-				<input type="hidden" name="page" value="AC__State_Dept_Petition">
-
-				<input type="hidden" name="lists" value="1" />
-	            <button class="btn danger large span4" style="margin-left: 20px;">Sign The Petition</button>
-	          </form>
 			</div>
 			<script>
 			// Setup tracking for form submisison on #censor
@@ -439,7 +436,16 @@
 	            }
 	          }).render().start();
 	          </script>
-	
+						<script type="application/javascript">
+						    function getip(json){
+									$('#signup_ip').val(json.ip);
+						    }
+
+						$("#user_agent").val(navigator.userAgent);
+						</script>
+
+						<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip"></script>
+
             </div>
           </div>
         </section>
