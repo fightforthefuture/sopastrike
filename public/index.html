@@ -18,10 +18,6 @@
 		    $('input[placeholder],textarea[placeholder]').placeholder();
 		});
 
-		function wrong_country() {
-			$(".us").toggle();
-			$(".not-us").toggle();
-		}
 		</script>
 		<script src="/bootstrap.modal.js"></script>
 	 	<meta property="og:title" content="Strike Against Sopa!" />
@@ -119,24 +115,6 @@
 			    });
 
 
-					//function geolocate(timezone, cityPrecision)
-					var visitorGeolocation = new geolocate(false, true);
-
-					//Check for cookie and run a callback function to execute after geolocation is read either from cookie or IPInfoDB API
-					//$(document).ready(function(){alert(visitorGeolocation.getField('countryCode'))}) doesnt work with google Chrome, this is why a callback is used instead
-					var callback = function(){
-						// alert('Visitor country code : ' + visitorGeolocation.getField('countryCode'));
-						// $('#country').text(visitorGeolocation.getField('countryCode'));
-						if (visitorGeolocation.getField('countryCode') != 'US') {
-							wrong_country();
-							$('.wrong').show();
-						} 
-				};
-					visitorGeolocation.checkcookie(callback);
-					$('.wrong').show();
-					$('.wrong').click(function() {
-					  wrong_country();
-					});
 			</script>
 		
 		
